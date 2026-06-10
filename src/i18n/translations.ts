@@ -81,6 +81,6 @@ export const translations: Record<Lang, Translation> = {
     footer: { rights: "جميع الحقوق محفوظة.", contact: "تواصل عبر واتساب" },
     wa: { greet: "مرحباً Aura، أود معرفة المزيد عن عطوركم." },
   },
-} as const;
+};
 
-export type Dict = typeof translations.en;
+export type Dict = Translation;
