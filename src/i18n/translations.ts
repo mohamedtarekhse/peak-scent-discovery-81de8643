@@ -1,6 +1,18 @@
 export type Lang = "en" | "ar";
 
-export const translations = {
+type Translation = {
+  dir: "ltr" | "rtl";
+  nav: { home: string; picker: string; collection: string; offers: string; contact: string };
+  hero: { tag: string; title: string; sub: string; cta1: string; cta2: string; hint: string };
+  picker: { title: string; sub: string; ph: readonly [string, string, string]; button: string; loading: string; results: string; reason: string; order: string; err: string };
+  collection: { title: string; sub: string };
+  offers: { title: string; sub: string; a: { t: string; d: string }; b: { t: string; d: string }; c: { t: string; d: string } };
+  social: { title: string; sub: string };
+  footer: { rights: string; contact: string };
+  wa: { greet: string };
+};
+
+export const translations: Record<Lang, Translation> = {
   en: {
     dir: "ltr",
     nav: { home: "Home", picker: "AI Picker", collection: "Collection", offers: "Offers", contact: "Contact" },
