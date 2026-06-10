@@ -1,4 +1,10 @@
-import bottleImg from "@/assets/bottle-placeholder.jpg";
+import diorHomme from "@/assets/dior-homme.png.asset.json";
+import bleuDeChanel from "@/assets/bleu-de-chanel.png.asset.json";
+import theOne from "@/assets/the-one.png.asset.json";
+import acquaDiGio from "@/assets/acqua-di-gio.png.asset.json";
+import yslY from "@/assets/ysl-y.png.asset.json";
+import spicebomb from "@/assets/spicebomb.png.asset.json";
+import alThaer from "@/assets/al-thaer.png.asset.json";
 
 export type Fragrance = {
   id: string;
@@ -12,72 +18,83 @@ export type Fragrance = {
   image: string;
 };
 
-// Starter catalog — replace with your real bottles + photos
+// Aura inspired-by collection — names reference the original muses
 export const catalog: Fragrance[] = [
   {
-    id: "aura-bleu",
-    name: "Aura Bleu",
-    nameAr: "أورا بلو",
+    id: "dior-homme",
+    name: "Dior Homme",
+    nameAr: "ديور أوم",
     brand: "Aura",
-    notes: ["Bergamot", "Sea Salt", "Cedarwood", "Ambergris"],
-    family: "Aquatic / Woody",
+    notes: ["Iris", "Cocoa", "Leather", "Vetiver"],
+    family: "Woody / Powdery",
     gender: "M",
     price: 850,
-    image: bottleImg,
+    image: diorHomme.url,
   },
   {
-    id: "aura-noir",
-    name: "Aura Noir",
-    nameAr: "أورا نوار",
+    id: "bleu-de-chanel",
+    name: "Bleu de Chanel",
+    nameAr: "بلو دو شانيل",
     brand: "Aura",
-    notes: ["Oud", "Saffron", "Rose", "Leather"],
-    family: "Oriental / Woody",
+    notes: ["Citrus", "Pink Pepper", "Ginger", "Sandalwood", "Cedar"],
+    family: "Aromatic / Woody",
+    gender: "M",
+    price: 950,
+    image: bleuDeChanel.url,
+  },
+  {
+    id: "the-one",
+    name: "The One",
+    nameAr: "ذا ون",
+    brand: "Aura",
+    notes: ["Bergamot", "Tobacco", "Amber", "Cardamom"],
+    family: "Oriental / Spicy",
+    gender: "M",
+    price: 900,
+    image: theOne.url,
+  },
+  {
+    id: "acqua-di-gio",
+    name: "Acqua di Giò",
+    nameAr: "أكوا دي جيو",
+    brand: "Aura",
+    notes: ["Sea Notes", "Bergamot", "Jasmine", "Patchouli"],
+    family: "Aquatic / Aromatic",
+    gender: "M",
+    price: 880,
+    image: acquaDiGio.url,
+  },
+  {
+    id: "ysl-y",
+    name: "Yves Saint Laurent Y",
+    nameAr: "واي إيف سان لوران",
+    brand: "Aura",
+    notes: ["Apple", "Sage", "Geranium", "Ambergris"],
+    family: "Aromatic / Fougère",
+    gender: "M",
+    price: 920,
+    image: yslY.url,
+  },
+  {
+    id: "spicebomb",
+    name: "Spicebomb",
+    nameAr: "سبايس بومب",
+    brand: "Aura",
+    notes: ["Pink Pepper", "Saffron", "Leather", "Tobacco"],
+    family: "Oriental / Spicy",
+    gender: "M",
+    price: 870,
+    image: spicebomb.url,
+  },
+  {
+    id: "al-thaer",
+    name: "Al Tha'er",
+    nameAr: "الثائر",
+    brand: "Aura",
+    notes: ["Oud", "Rose", "Saffron", "Musk", "Amber"],
+    family: "Oriental / Oud",
     gender: "U",
     price: 1200,
-    image: bottleImg,
-  },
-  {
-    id: "aura-blanc",
-    name: "Aura Blanc",
-    nameAr: "أورا بلان",
-    brand: "Aura",
-    notes: ["Jasmine", "White Musk", "Vanilla", "Sandalwood"],
-    family: "Floral / Musky",
-    gender: "F",
-    price: 950,
-    image: bottleImg,
-  },
-  {
-    id: "aura-vert",
-    name: "Aura Vert",
-    nameAr: "أورا فيرت",
-    brand: "Aura",
-    notes: ["Green Tea", "Mint", "Vetiver", "Lime"],
-    family: "Fresh / Green",
-    gender: "U",
-    price: 780,
-    image: bottleImg,
-  },
-  {
-    id: "aura-or",
-    name: "Aura Or",
-    nameAr: "أورا أور",
-    brand: "Aura",
-    notes: ["Amber", "Honey", "Tobacco", "Vanilla"],
-    family: "Amber / Sweet",
-    gender: "U",
-    price: 1100,
-    image: bottleImg,
-  },
-  {
-    id: "aura-rouge",
-    name: "Aura Rouge",
-    nameAr: "أورا روج",
-    brand: "Aura",
-    notes: ["Red Rose", "Patchouli", "Oud", "Pink Pepper"],
-    family: "Floral / Oriental",
-    gender: "F",
-    price: 1050,
-    image: bottleImg,
+    image: alThaer.url,
   },
 ];
