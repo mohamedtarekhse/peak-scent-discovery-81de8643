@@ -18,7 +18,7 @@ export function Collection() {
               key={f.id}
               className="group overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-white/5 to-transparent transition-all hover:border-white/30 hover:-translate-y-1"
             >
-              <div className="aspect-[4/5] overflow-hidden bg-[#1a3a5e]">
+              <div className="aspect-[3/4] overflow-hidden bg-white">
                 <img
                   src={f.image}
                   alt={lang === "ar" ? f.nameAr : f.name}
