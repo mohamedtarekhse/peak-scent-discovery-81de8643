@@ -26,7 +26,10 @@ export const recommendFragrances = createServerFn({ method: "POST" })
     if (!key) throw new Error("Missing LOVABLE_API_KEY");
 
     const catalogText = catalog
-      .map((c) => `- id:${c.id} | ${c.name} | family:${c.family} | notes:${c.notes.join(", ")} | gender:${c.gender}`)
+      .map(
+        (c) =>
+          `- id:${c.id} | ${c.name}${c.inspiredBy ? ` (inspired by ${c.inspiredBy})` : ""} | family:${c.family} | notes:${c.notes.join(", ")} | gender:${c.gender}`,
+      )
       .join("\n");
 
     const sys = `You are a master perfumer recommending fragrances from the Aura house catalog ONLY. Given a user's 3 favorite fragrances (any brand, real-world), analyze their likely scent profile (notes, families, mood) using your Fragrantica-level knowledge of real fragrance pyramids. Then pick the 3 best matches from the catalog. Reasons must be in ${data.lang === "ar" ? "Arabic" : "English"}, and the profile summary in ${data.lang === "ar" ? "Arabic" : "English"} too. Also extract the user's scent DNA: the specific NOTES (ingredients/components, e.g. "Bergamot", "Oud", "Vanilla") that appear in 2 or more of their 3 favorites — the components they reliably love — plus the dominant accords/families. Note and accord names MUST be in English using standard Fragrantica terminology so they can be searched on fragrantica.com. Return STRICT JSON only, no markdown, in the shape: {"matches":[{"id":"<catalog id>","reason":"<one short sentence>"}],"profile":{"notes":["<3-6 shared notes in English>"],"accords":["<2-4 accords in English>"],"summary":"<one sentence describing their taste>"}}. Use exactly 3 matches, each id must exist in the catalog.`;

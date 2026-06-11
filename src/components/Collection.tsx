@@ -31,6 +31,11 @@ export function Collection() {
               <div className="p-6">
                 <h3 className="font-serif text-xl text-white">{lang === "ar" ? f.nameAr : f.name}</h3>
                 <p className="mt-1 text-xs uppercase tracking-wider text-[#5cbdb9]">{f.family}</p>
+                {f.inspiredBy && (
+                  <p className="mt-2 text-xs italic text-white/40">
+                    {t.collection.inspiredBy} {lang === "ar" ? f.inspiredByAr : f.inspiredBy}
+                  </p>
+                )}
                 <p className="mt-3 text-sm text-white/50">{f.notes.join(" · ")}</p>
                 <div className="mt-5 flex items-center justify-between">
                   <span className="font-serif text-lg text-white">{f.price} EGP</span>
