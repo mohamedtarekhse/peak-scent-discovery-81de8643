@@ -13,9 +13,15 @@ export type Recommendation = {
   reason: string;
 };
 
+export type ScentProfile = {
+  notes: string[];
+  accords: string[];
+  summary: string;
+};
+
 export const recommendFragrances = createServerFn({ method: "POST" })
   .inputValidator((d: unknown) => Input.parse(d))
-  .handler(async ({ data }): Promise<{ matches: Recommendation[] }> => {
+  .handler(async ({ data }): Promise<{ matches: Recommendation[]; profile: ScentProfile }> => {
     const key = process.env.LOVABLE_API_KEY;
     if (!key) throw new Error("Missing LOVABLE_API_KEY");
 
@@ -23,7 +29,7 @@ export const recommendFragrances = createServerFn({ method: "POST" })
       .map((c) => `- id:${c.id} | ${c.name} | family:${c.family} | notes:${c.notes.join(", ")} | gender:${c.gender}`)
       .join("\n");
 
-    const sys = `You are a master perfumer recommending fragrances from the Aura house catalog ONLY. Given a user's 3 favorite fragrances (any brand, real-world), analyze their likely scent profile (notes, families, mood) using your knowledge. Then pick the 3 best matches from the catalog. Reply in ${data.lang === "ar" ? "Arabic" : "English"}. Return STRICT JSON only, no markdown, in the shape: {"matches":[{"id":"<catalog id>","reason":"<one short sentence>"}]}. Use exactly 3 matches, each id must exist in the catalog.`;
+    const sys = `You are a master perfumer recommending fragrances from the Aura house catalog ONLY. Given a user's 3 favorite fragrances (any brand, real-world), analyze their likely scent profile (notes, families, mood) using your Fragrantica-level knowledge of real fragrance pyramids. Then pick the 3 best matches from the catalog. Reasons must be in ${data.lang === "ar" ? "Arabic" : "English"}, and the profile summary in ${data.lang === "ar" ? "Arabic" : "English"} too. Also extract the user's scent DNA: the specific NOTES (ingredients/components, e.g. "Bergamot", "Oud", "Vanilla") that appear in 2 or more of their 3 favorites — the components they reliably love — plus the dominant accords/families. Note and accord names MUST be in English using standard Fragrantica terminology so they can be searched on fragrantica.com. Return STRICT JSON only, no markdown, in the shape: {"matches":[{"id":"<catalog id>","reason":"<one short sentence>"}],"profile":{"notes":["<3-6 shared notes in English>"],"accords":["<2-4 accords in English>"],"summary":"<one sentence describing their taste>"}}. Use exactly 3 matches, each id must exist in the catalog.`;
 
     const user = `User's 3 favorites:\n1. ${data.favorites[0]}\n2. ${data.favorites[1]}\n3. ${data.favorites[2]}\n\nCatalog:\n${catalogText}`;
 
@@ -52,12 +58,21 @@ export const recommendFragrances = createServerFn({ method: "POST" })
 
     const json = (await res.json()) as { choices?: Array<{ message?: { content?: string } }> };
     const content = json.choices?.[0]?.message?.content ?? "{}";
-    let parsed: { matches?: Array<{ id?: string; reason?: string }> };
+    let parsed: {
+      matches?: Array<{ id?: string; reason?: string }>;
+      profile?: { notes?: string[]; accords?: string[]; summary?: string };
+    };
     try {
       parsed = JSON.parse(content);
     } catch {
       throw new Error("Invalid AI response");
     }
+
+    const profile: ScentProfile = {
+      notes: (parsed.profile?.notes ?? []).filter((n): n is string => typeof n === "string").slice(0, 8),
+      accords: (parsed.profile?.accords ?? []).filter((a): a is string => typeof a === "string").slice(0, 6),
+      summary: typeof parsed.profile?.summary === "string" ? parsed.profile.summary : "",
+    };
 
     const matches: Recommendation[] = (parsed.matches ?? [])
       .map((m) => {
@@ -76,8 +91,9 @@ export const recommendFragrances = createServerFn({ method: "POST" })
           name: data.lang === "ar" ? c.nameAr : c.name,
           reason: data.lang === "ar" ? "اختيار من تشكيلتنا الأكثر تميزاً" : "A signature pick from our house.",
         })),
+        profile,
       };
     }
 
-    return { matches };
+    return { matches, profile };
   });
