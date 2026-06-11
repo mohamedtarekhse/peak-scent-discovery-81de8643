@@ -88,8 +88,56 @@ export function AIPicker() {
 
         {error && <p className="mt-6 text-sm text-red-300">{error}</p>}
 
+        {profile && (
+          <div className="mt-16 animate-fade-in rounded-3xl border border-[#5cbdb9]/30 bg-[#5cbdb9]/5 p-8 text-start backdrop-blur">
+            <div className="flex items-center gap-3">
+              <FlaskConical className="h-6 w-6 text-[#5cbdb9]" />
+              <h3 className="font-serif text-2xl text-white">{t.picker.dnaTitle}</h3>
+            </div>
+            <p className="mt-2 text-sm text-white/60">{t.picker.dnaSub}</p>
+            {profile.summary && <p className="mt-4 text-sm italic text-white/80">{profile.summary}</p>}
+
+            {profile.notes.length > 0 && (
+              <div className="mt-6">
+                <p className="mb-3 text-xs uppercase tracking-widest text-[#5cbdb9]">{t.picker.dnaNotes}</p>
+                <div className="flex flex-wrap gap-2">
+                  {profile.notes.map((n) => (
+                    <a
+                      key={n}
+                      href={fragranticaSearch(n)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title={t.picker.dnaSearch}
+                      className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm text-white transition-colors hover:border-[#5cbdb9] hover:bg-[#5cbdb9]/15"
+                    >
+                      {n}
+                      <ExternalLink className="h-3 w-3 opacity-50" />
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {profile.accords.length > 0 && (
+              <div className="mt-5">
+                <p className="mb-3 text-xs uppercase tracking-widest text-[#5cbdb9]">{t.picker.dnaAccords}</p>
+                <div className="flex flex-wrap gap-2">
+                  {profile.accords.map((a) => (
+                    <span
+                      key={a}
+                      className="rounded-full bg-white/10 px-4 py-2 text-sm text-white/80"
+                    >
+                      {a}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        )}
+
         {results && (
-          <div className="mt-16 animate-fade-in">
+          <div className="mt-12 animate-fade-in">
             <h3 className="mb-8 font-serif text-2xl text-white">{t.picker.results}</h3>
             <div className="grid gap-6 md:grid-cols-3">
               {results.map((r) => (
@@ -103,7 +151,7 @@ export function AIPicker() {
                     {r.reason}
                   </p>
                   <a
-                    href={waLink(`${t.wa.greet} (${r.name})`)}
+                    href={waLink(orderMessage(r.name))}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-5 inline-flex w-full items-center justify-center rounded-full bg-[#25D366]/90 px-4 py-2.5 text-xs font-medium text-white hover:bg-[#25D366] transition-colors"
