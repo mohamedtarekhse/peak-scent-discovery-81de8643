@@ -13,9 +13,15 @@ export type Recommendation = {
   reason: string;
 };
 
+export type ScentProfile = {
+  notes: string[];
+  accords: string[];
+  summary: string;
+};
+
 export const recommendFragrances = createServerFn({ method: "POST" })
   .inputValidator((d: unknown) => Input.parse(d))
-  .handler(async ({ data }): Promise<{ matches: Recommendation[] }> => {
+  .handler(async ({ data }): Promise<{ matches: Recommendation[]; profile: ScentProfile }> => {
     const key = process.env.LOVABLE_API_KEY;
     if (!key) throw new Error("Missing LOVABLE_API_KEY");
 
