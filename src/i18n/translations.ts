@@ -4,7 +4,7 @@ type Translation = {
   dir: "ltr" | "rtl";
   nav: { home: string; picker: string; collection: string; offers: string; contact: string };
   hero: { tag: string; title: string; sub: string; cta1: string; cta2: string; hint: string };
-  picker: { title: string; sub: string; ph: readonly [string, string, string]; button: string; loading: string; results: string; reason: string; order: string; err: string };
+  picker: { title: string; sub: string; ph: readonly [string, string, string]; button: string; loading: string; results: string; reason: string; order: string; err: string; dnaTitle: string; dnaSub: string; dnaNotes: string; dnaAccords: string; dnaSearch: string };
   collection: { title: string; sub: string };
   offers: { title: string; sub: string; a: { t: string; d: string }; b: { t: string; d: string }; c: { t: string; d: string } };
   social: { title: string; sub: string };
@@ -34,6 +34,11 @@ export const translations: Record<Lang, Translation> = {
       reason: "Why",
       order: "Order on WhatsApp",
       err: "Couldn't reach the AI. Please try again.",
+      dnaTitle: "Your Scent DNA",
+      dnaSub: "The components you reliably love — found in your three favorites.",
+      dnaNotes: "Notes you love",
+      dnaAccords: "Dominant accords",
+      dnaSearch: "Search on Fragrantica",
     },
     collection: { title: "The Collection", sub: "Each bottle, a peak of its own." },
     offers: {
@@ -68,6 +73,11 @@ export const translations: Record<Lang, Translation> = {
       reason: "السبب",
       order: "اطلب عبر واتساب",
       err: "تعذر الوصول للذكاء الاصطناعي. حاول مجدداً.",
+      dnaTitle: "بصمتك العطرية",
+      dnaSub: "المكونات التي تحبها بثقة — موجودة في عطورك الثلاثة المفضلة.",
+      dnaNotes: "نوتات تحبها",
+      dnaAccords: "العائلات المهيمنة",
+      dnaSearch: "ابحث في فراجرانتيكا",
     },
     collection: { title: "المجموعة", sub: "كل زجاجة قمّة بذاتها." },
     offers: {
