@@ -1,9 +1,12 @@
 import { useState } from "react";
-import { Sparkles, Loader2 } from "lucide-react";
+import { Sparkles, Loader2, FlaskConical, ExternalLink } from "lucide-react";
 import { useServerFn } from "@tanstack/react-start";
 import { useLang } from "@/i18n/LangProvider";
-import { recommendFragrances, type Recommendation } from "@/lib/api/recommend.functions";
+import { recommendFragrances, type Recommendation, type ScentProfile } from "@/lib/api/recommend.functions";
 import { waLink } from "./WhatsAppFloat";
+
+const fragranticaSearch = (term: string) =>
+  `https://www.fragrantica.com/search/?query=${encodeURIComponent(term)}`;
 
 export function AIPicker() {
   const { t, lang } = useLang();
@@ -11,6 +14,7 @@ export function AIPicker() {
   const [favs, setFavs] = useState<[string, string, string]>(["", "", ""]);
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState<Recommendation[] | null>(null);
+  const [profile, setProfile] = useState<ScentProfile | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   const submit = async (e: React.FormEvent) => {
@@ -19,15 +23,26 @@ export function AIPicker() {
     setLoading(true);
     setError(null);
     setResults(null);
+    setProfile(null);
     try {
       const r = await recommend({ data: { favorites: favs, lang } });
       setResults(r.matches);
+      setProfile(r.profile?.notes?.length || r.profile?.accords?.length ? r.profile : null);
     } catch (err) {
       setError(err instanceof Error ? err.message : t.picker.err);
     } finally {
       setLoading(false);
     }
   };
+
+  const orderMessage = (name: string) => {
+    let msg = `${t.wa.greet} (${name})`;
+    if (profile?.notes?.length) {
+      msg += `\n${lang === "ar" ? "النوتات التي أحبها" : "Notes I love"}: ${profile.notes.join(", ")}`;
+    }
+    return msg;
+  };
+
 
   return (
     <section id="picker" className="relative bg-gradient-to-b from-[#0a1628] to-[#0c2340] px-6 py-24">
