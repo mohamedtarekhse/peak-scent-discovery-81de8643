@@ -5,7 +5,7 @@ type Translation = {
   nav: { home: string; picker: string; collection: string; offers: string; contact: string };
   hero: { tag: string; title: string; sub: string; cta1: string; cta2: string; hint: string };
   picker: { title: string; sub: string; ph: readonly [string, string, string]; button: string; loading: string; results: string; reason: string; order: string; err: string; dnaTitle: string; dnaSub: string; dnaNotes: string; dnaAccords: string; dnaSearch: string };
-  collection: { title: string; sub: string };
+  collection: { title: string; sub: string; inspiredBy: string };
   offers: { title: string; sub: string; a: { t: string; d: string }; b: { t: string; d: string }; c: { t: string; d: string } };
   social: { title: string; sub: string };
   footer: { rights: string; contact: string };
@@ -40,7 +40,7 @@ export const translations: Record<Lang, Translation> = {
       dnaAccords: "Dominant accords",
       dnaSearch: "Search on Fragrantica",
     },
-    collection: { title: "The Collection", sub: "Each bottle, a peak of its own." },
+    collection: { title: "The Collection", sub: "Each bottle, a peak of its own.", inspiredBy: "Inspired by" },
     offers: {
       title: "Offers",
       sub: "Three ways to live with Aura.",
@@ -79,7 +79,7 @@ export const translations: Record<Lang, Translation> = {
       dnaAccords: "العائلات المهيمنة",
       dnaSearch: "ابحث في فراجرانتيكا",
     },
-    collection: { title: "المجموعة", sub: "كل زجاجة قمّة بذاتها." },
+    collection: { title: "المجموعة", sub: "كل زجاجة قمّة بذاتها.", inspiredBy: "مستوحى من" },
     offers: {
       title: "العروض",
       sub: "ثلاث طرق لتعيش مع Aura.",
