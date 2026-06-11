@@ -58,12 +58,21 @@ export const recommendFragrances = createServerFn({ method: "POST" })
 
     const json = (await res.json()) as { choices?: Array<{ message?: { content?: string } }> };
     const content = json.choices?.[0]?.message?.content ?? "{}";
-    let parsed: { matches?: Array<{ id?: string; reason?: string }> };
+    let parsed: {
+      matches?: Array<{ id?: string; reason?: string }>;
+      profile?: { notes?: string[]; accords?: string[]; summary?: string };
+    };
     try {
       parsed = JSON.parse(content);
     } catch {
       throw new Error("Invalid AI response");
     }
+
+    const profile: ScentProfile = {
+      notes: (parsed.profile?.notes ?? []).filter((n): n is string => typeof n === "string").slice(0, 8),
+      accords: (parsed.profile?.accords ?? []).filter((a): a is string => typeof a === "string").slice(0, 6),
+      summary: typeof parsed.profile?.summary === "string" ? parsed.profile.summary : "",
+    };
 
     const matches: Recommendation[] = (parsed.matches ?? [])
       .map((m) => {
@@ -82,8 +91,9 @@ export const recommendFragrances = createServerFn({ method: "POST" })
           name: data.lang === "ar" ? c.nameAr : c.name,
           reason: data.lang === "ar" ? "اختيار من تشكيلتنا الأكثر تميزاً" : "A signature pick from our house.",
         })),
+        profile,
       };
     }
 
-    return { matches };
+    return { matches, profile };
   });
