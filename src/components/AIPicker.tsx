@@ -140,12 +140,23 @@ export function AIPicker() {
           <div className="mt-12 animate-fade-in">
             <h3 className="mb-8 font-serif text-2xl text-white">{t.picker.results}</h3>
             <div className="grid gap-6 md:grid-cols-3">
-              {results.map((r) => (
+              {results.map((r, i) => (
                 <div
                   key={r.id}
                   className="rounded-3xl border border-white/10 bg-white/5 p-6 text-start backdrop-blur"
                 >
-                  <h4 className="font-serif text-xl text-white">{r.name}</h4>
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="text-xs uppercase tracking-widest text-[#5cbdb9]">#{i + 1}</span>
+                    <span className="rounded-full bg-[#5cbdb9]/20 px-2.5 py-1 text-xs font-medium text-[#5cbdb9]">
+                      {r.matchScore}% match
+                    </span>
+                  </div>
+                  <h4 className="mt-2 font-serif text-xl text-white">{r.name}</h4>
+                  {r.inspiredBy && (
+                    <p className="mt-1 text-xs italic text-white/50">
+                      {lang === "ar" ? "مستوحى من" : "Inspired by"}: {r.inspiredBy}
+                    </p>
+                  )}
                   <p className="mt-3 text-sm text-white/60">
                     <span className="text-[#5cbdb9]">{t.picker.reason}: </span>
                     {r.reason}
