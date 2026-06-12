@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { ArrowDown } from "lucide-react";
 import { useLang } from "@/i18n/LangProvider";
 import heroImg from "@/assets/hero-mountain.jpg";
+import heroVideo from "@/assets/hero.mp4.asset.json";
 
 export function Hero() {
   const { t } = useLang();
@@ -37,10 +38,19 @@ export function Hero() {
 
   return (
     <section id="home" className="relative h-screen min-h-[640px] w-full overflow-hidden bg-[#0a1628]">
+      <video
+        src={heroVideo.url}
+        autoPlay
+        muted
+        loop
+        playsInline
+        poster={heroImg}
+        className="absolute inset-0 h-full w-full object-cover opacity-70"
+      />
       <img
         src={heroImg}
         alt=""
-        className="absolute inset-0 h-full w-full object-cover opacity-80 animate-[kenburns_20s_ease-in-out_infinite_alternate]"
+        className="absolute inset-0 h-full w-full object-cover opacity-0"
         width={1920}
         height={1080}
       />
