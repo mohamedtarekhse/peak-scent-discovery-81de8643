@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { ArrowDown } from "lucide-react";
 import { useLang } from "@/i18n/LangProvider";
 import heroImg from "@/assets/hero-mountain.jpg";
+import heroVideo from "@/assets/hero.mp4.asset.json";
 
 export function Hero() {
   const { t } = useLang();
