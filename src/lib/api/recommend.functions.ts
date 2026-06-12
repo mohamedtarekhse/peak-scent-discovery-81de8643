@@ -64,7 +64,7 @@ export const recommendFragrances = createServerFn({ method: "POST" })
     const json = (await res.json()) as { choices?: Array<{ message?: { content?: string } }> };
     const content = json.choices?.[0]?.message?.content ?? "{}";
     let parsed: {
-      matches?: Array<{ id?: string; reason?: string }>;
+      matches?: Array<{ id?: string; reason?: string; matchScore?: number }>;
       profile?: { notes?: string[]; accords?: string[]; summary?: string };
     };
     try {
@@ -83,17 +83,26 @@ export const recommendFragrances = createServerFn({ method: "POST" })
       .map((m) => {
         const c = catalog.find((x) => x.id === m.id);
         if (!c) return null;
-        return { id: c.id, name: data.lang === "ar" ? c.nameAr : c.name, reason: m.reason ?? "" };
+        return {
+          id: c.id,
+          name: data.lang === "ar" ? c.nameAr : c.name,
+          inspiredBy: data.lang === "ar" ? c.inspiredByAr : c.inspiredBy,
+          matchScore: typeof m.matchScore === "number" ? Math.max(0, Math.min(100, Math.round(m.matchScore))) : 0,
+          reason: m.reason ?? "",
+        };
       })
       .filter((x): x is Recommendation => x !== null)
+      .sort((a, b) => b.matchScore - a.matchScore)
       .slice(0, 3);
 
     // Fallback: if AI didn't return valid ids, pick first 3
     if (matches.length === 0) {
       return {
-        matches: catalog.slice(0, 3).map((c) => ({
+        matches: catalog.slice(0, 3).map((c, i) => ({
           id: c.id,
           name: data.lang === "ar" ? c.nameAr : c.name,
+          inspiredBy: data.lang === "ar" ? c.inspiredByAr : c.inspiredBy,
+          matchScore: 80 - i * 5,
           reason: data.lang === "ar" ? "اختيار من تشكيلتنا الأكثر تميزاً" : "A signature pick from our house.",
         })),
         profile,
