@@ -80,7 +80,7 @@ export const recommendFragrances = createServerFn({ method: "POST" })
     };
 
     const matches: Recommendation[] = (parsed.matches ?? [])
-      .map((m) => {
+      .map<Recommendation | null>((m) => {
         const c = catalog.find((x) => x.id === m.id);
         if (!c) return null;
         return {
