@@ -10,6 +10,8 @@ const Input = z.object({
 export type Recommendation = {
   id: string;
   name: string;
+  inspiredBy?: string;
+  matchScore: number;
   reason: string;
 };
 
