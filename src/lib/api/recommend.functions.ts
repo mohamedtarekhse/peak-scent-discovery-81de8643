@@ -34,7 +34,7 @@ export const recommendFragrances = createServerFn({ method: "POST" })
       )
       .join("\n");
 
-    const sys = `You are a master perfumer recommending fragrances from the Aura house catalog ONLY. Given a user's 3 favorite fragrances (any brand, real-world), use your Fragrantica-level knowledge of real fragrance pyramids and the "similar fragrances" relationships shown on each Fragrantica page to pick the 3 best matches from the catalog and RANK them from most similar to least similar — mirror the order Fragrantica would list matches for the same user inputs. Score each match 0-100 (100 = near-clone), and sort the array strictly by descending matchScore. Reasons must be in ${data.lang === "ar" ? "Arabic" : "English"}, and the profile summary in ${data.lang === "ar" ? "Arabic" : "English"} too. Also extract the user's scent DNA: the specific NOTES (ingredients/components, e.g. "Bergamot", "Oud", "Vanilla") that appear in 2 or more of their 3 favorites — the components they reliably love — plus the dominant accords/families. Note and accord names MUST be in English using standard Fragrantica terminology so they can be searched on fragrantica.com. Return STRICT JSON only, no markdown, in the shape: {"matches":[{"id":"<catalog id>","matchScore":<0-100 integer>,"reason":"<one short sentence citing shared notes/accords>"}],"profile":{"notes":["<3-6 shared notes in English>"],"accords":["<2-4 accords in English>"],"summary":"<one sentence describing their taste>"}}. Use exactly 3 matches, sorted by matchScore descending, each id must exist in the catalog.`;
+    const sys = `You are a master perfumer recommending fragrances from the Aura house catalog ONLY. Given a user's 3 favorite fragrances (any brand, real-world), use your Fragrantica-level knowledge of real fragrance pyramids and the "similar fragrances" relationships shown on each Fragrantica page to pick the 3 best matches from the catalog and RANK them from most similar to least similar — mirror the order Fragrantica would list matches for the same user inputs. Score each match 0-100 (100 = near-clone), and sort the array strictly by descending matchScore. Reasons must be in ${data.lang === "ar" ? "Arabic" : "English"}, and the profile summary in ${data.lang === "ar" ? "Arabic" : "English"} too. Also extract the user's scent DNA: the specific NOTES (ingredients/components, e.g. "Bergamot", "Oud", "Vanilla") that appear in 2 or more of their 3 favorites — the components they reliably love — plus the dominant accords/families. Note and accord names MUST be in English using standard Fragrantica terminology so they can be searched on fragrantica.com. Return STRICT JSON only, no markdown, in the shape: {"matches":[{"id":"<catalog id>","matchScore":<0-100 integer>,"reason":"<one short sentence citing shared notes/accords>"}],"profile":{"notes":["<3-6 shared notes in English>"],"accords":["<2-4 accords in English>"],"summary":"<one sentence describing their taste>"}}. Use exactly 10 matches, sorted by matchScore descending, each id must exist in the catalog.`;
 
     const user = `User's 3 favorites:\n1. ${data.favorites[0]}\n2. ${data.favorites[1]}\n3. ${data.favorites[2]}\n\nCatalog:\n${catalogText}`;
 
@@ -93,12 +93,12 @@ export const recommendFragrances = createServerFn({ method: "POST" })
       })
       .filter((x): x is Recommendation => x !== null)
       .sort((a, b) => b.matchScore - a.matchScore)
-      .slice(0, 3);
+      .slice(0, 10);
 
     // Fallback: if AI didn't return valid ids, pick first 3
     if (matches.length === 0) {
       return {
-        matches: catalog.slice(0, 3).map((c, i) => ({
+        matches: catalog.slice(0, 10).map((c, i) => ({
           id: c.id,
           name: data.lang === "ar" ? c.nameAr : c.name,
           inspiredBy: data.lang === "ar" ? c.inspiredByAr : c.inspiredBy,
