@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from "react";
 import { ArrowDown } from "lucide-react";
 import { useLang } from "@/i18n/LangProvider";
 import heroImg from "@/assets/hero-mountain.jpg";
@@ -6,35 +5,6 @@ import heroVideo from "@/assets/hero.mp4.asset.json";
 
 export function Hero() {
   const { t } = useLang();
-  const [pos, setPos] = useState({ x: 0, y: 0 });
-  const [dragging, setDragging] = useState(false);
-  const [interacted, setInteracted] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
-  const start = useRef({ x: 0, y: 0, px: 0, py: 0 });
-
-  const onDown = (e: React.PointerEvent) => {
-    setDragging(true);
-    setInteracted(true);
-    start.current = { x: e.clientX, y: e.clientY, px: pos.x, py: pos.y };
-    (e.target as HTMLElement).setPointerCapture(e.pointerId);
-  };
-  const onMove = (e: React.PointerEvent) => {
-    if (!dragging) return;
-    setPos({
-      x: start.current.px + (e.clientX - start.current.x),
-      y: start.current.py + (e.clientY - start.current.y),
-    });
-  };
-  const onUp = () => {
-    setDragging(false);
-    // gentle snap back
-    setTimeout(() => setPos({ x: 0, y: 0 }), 50);
-  };
-
-  useEffect(() => {
-    const t = setTimeout(() => setInteracted(true), 6000);
-    return () => clearTimeout(t);
-  }, []);
 
   return (
     <section id="home" className="relative h-screen min-h-[640px] w-full overflow-hidden bg-[#0a1628]">
@@ -62,30 +32,7 @@ export function Hero() {
           {t.hero.tag}
         </p>
 
-        <div
-          ref={ref}
-          onPointerDown={onDown}
-          onPointerMove={onMove}
-          onPointerUp={onUp}
-          onPointerCancel={onUp}
-          style={{
-            transform: `translate(${pos.x}px, ${pos.y}px)`,
-            transition: dragging ? "none" : "transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1)",
-            touchAction: "none",
-          }}
-          className="relative cursor-grab select-none active:cursor-grabbing"
-        >
-          <h1 className="font-serif text-[22vw] leading-none tracking-tight text-white drop-shadow-2xl md:text-[14rem]">
-            Aura
-          </h1>
-          {!interacted && (
-            <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-white/10 px-3 py-1 text-[10px] uppercase tracking-[0.3em] text-white/70 backdrop-blur animate-pulse">
-              ← {t.hero.hint} →
-            </span>
-          )}
-        </div>
-
-        <p className="mt-8 max-w-xl text-base text-white/70 md:text-lg animate-fade-in">
+        <p className="max-w-xl text-base text-white/70 md:text-lg animate-fade-in">
           {t.hero.sub}
         </p>
 
