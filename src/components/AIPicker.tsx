@@ -46,7 +46,7 @@ export function AIPicker() {
 
   return (
     <section id="picker" className="relative bg-gradient-to-b from-[#0a1628] to-[#0c2340] px-6 py-24">
-      <div className="mx-auto max-w-3xl text-center">
+      <div className="mx-auto max-w-6xl text-center">
         <Sparkles className="mx-auto mb-4 h-8 w-8 text-[#5cbdb9]" />
         <h2 className="font-serif text-4xl text-white md:text-5xl">{t.picker.title}</h2>
         <p className="mx-auto mt-4 max-w-xl text-white/60">{t.picker.sub}</p>
@@ -139,7 +139,7 @@ export function AIPicker() {
         {results && (
           <div className="mt-12 animate-fade-in">
             <h3 className="mb-8 font-serif text-2xl text-white">{t.picker.results}</h3>
-            <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+            <div className="grid grid-cols-3 gap-6">
               {results.map((r, i) => (
                 <div
                   key={r.id}
