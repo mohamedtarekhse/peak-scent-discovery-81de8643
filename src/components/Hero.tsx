@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from "react";
 import { ArrowDown } from "lucide-react";
 import { useLang } from "@/i18n/LangProvider";
 import heroImg from "@/assets/hero-mountain.jpg";
@@ -6,35 +5,6 @@ import heroVideo from "@/assets/hero.mp4.asset.json";
 
 export function Hero() {
   const { t } = useLang();
-  const [pos, setPos] = useState({ x: 0, y: 0 });
-  const [dragging, setDragging] = useState(false);
-  const [interacted, setInteracted] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
-  const start = useRef({ x: 0, y: 0, px: 0, py: 0 });
-
-  const onDown = (e: React.PointerEvent) => {
-    setDragging(true);
-    setInteracted(true);
-    start.current = { x: e.clientX, y: e.clientY, px: pos.x, py: pos.y };
-    (e.target as HTMLElement).setPointerCapture(e.pointerId);
-  };
-  const onMove = (e: React.PointerEvent) => {
-    if (!dragging) return;
-    setPos({
-      x: start.current.px + (e.clientX - start.current.x),
-      y: start.current.py + (e.clientY - start.current.y),
-    });
-  };
-  const onUp = () => {
-    setDragging(false);
-    // gentle snap back
-    setTimeout(() => setPos({ x: 0, y: 0 }), 50);
-  };
-
-  useEffect(() => {
-    const t = setTimeout(() => setInteracted(true), 6000);
-    return () => clearTimeout(t);
-  }, []);
 
   return (
     <section id="home" className="relative h-screen min-h-[640px] w-full overflow-hidden bg-[#0a1628]">
