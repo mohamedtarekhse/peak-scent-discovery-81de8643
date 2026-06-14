@@ -32,27 +32,7 @@ export function Hero() {
           {t.hero.tag}
         </p>
 
-        <div
-          ref={ref}
-          onPointerDown={onDown}
-          onPointerMove={onMove}
-          onPointerUp={onUp}
-          onPointerCancel={onUp}
-          style={{
-            transform: `translate(${pos.x}px, ${pos.y}px)`,
-            transition: dragging ? "none" : "transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1)",
-            touchAction: "none",
-          }}
-          className="relative cursor-grab select-none active:cursor-grabbing"
-        >
-          {!interacted && (
-            <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-white/10 px-3 py-1 text-[10px] uppercase tracking-[0.3em] text-white/70 backdrop-blur animate-pulse">
-              ← {t.hero.hint} →
-            </span>
-          )}
-        </div>
-
-        <p className="mt-8 max-w-xl text-base text-white/70 md:text-lg animate-fade-in">
+        <p className="max-w-xl text-base text-white/70 md:text-lg animate-fade-in">
           {t.hero.sub}
         </p>
 
