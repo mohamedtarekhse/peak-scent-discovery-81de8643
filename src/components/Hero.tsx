@@ -75,9 +75,11 @@ export function Hero() {
           }}
           className="relative cursor-grab select-none active:cursor-grabbing"
         >
-          <h1 className="font-serif text-[22vw] leading-none tracking-tight text-white drop-shadow-2xl md:text-[14rem]">
-            Aura
-          </h1>
+          <img
+            src={auraLogo}
+            alt="Aura"
+            className="w-[60vw] max-w-[500px] invert drop-shadow-2xl md:w-[40vw]"
+          />
           {!interacted && (
             <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-white/10 px-3 py-1 text-[10px] uppercase tracking-[0.3em] text-white/70 backdrop-blur animate-pulse">
               ← {t.hero.hint} →
