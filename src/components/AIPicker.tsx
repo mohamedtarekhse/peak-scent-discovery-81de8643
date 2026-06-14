@@ -139,7 +139,7 @@ export function AIPicker() {
         {results && (
           <div className="mt-12 animate-fade-in">
             <h3 className="mb-8 font-serif text-2xl text-white">{t.picker.results}</h3>
-            <div className="grid gap-6 md:grid-cols-3">
+            <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
               {results.map((r, i) => (
                 <div
                   key={r.id}
