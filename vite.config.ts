@@ -12,4 +12,8 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Force the nitro deploy plugin even outside the Lovable sandbox (e.g. Cloudflare Pages CI).
+  nitro: {
+    preset: "cloudflare-pages",
+  },
 });
