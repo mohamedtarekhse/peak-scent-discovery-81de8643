@@ -1,13 +1,23 @@
+import { useRef } from "react";
 import { ArrowDown } from "lucide-react";
 import { useLang } from "@/i18n/LangProvider";
+import { useScrollProgress } from "@/hooks/use-scroll-progress";
 import heroImg from "@/assets/hero-mountain.jpg";
 import heroVideo from "@/assets/hero.mp4.asset.json";
 
 export function Hero() {
   const { t } = useLang();
+  const sectionRef = useRef<HTMLElement | null>(null);
+  // 0 → 1 as the hero scrolls out of view; used to blend video → still image
+  const p = useScrollProgress(sectionRef);
 
   return (
-    <section id="home" className="relative h-screen min-h-[640px] w-full overflow-hidden bg-[#0a1628]">
+    <section
+      id="home"
+      ref={sectionRef}
+      className="relative h-screen min-h-[640px] w-full overflow-hidden bg-[#0a1628]"
+    >
+      {/* ODD hero video — fades out while scrolling */}
       <video
         src={heroVideo.url}
         autoPlay
@@ -15,14 +25,21 @@ export function Hero() {
         loop
         playsInline
         poster={heroImg}
-        className="absolute inset-0 h-full w-full object-cover opacity-70"
+        aria-hidden="true"
+        className="absolute inset-0 h-full w-full object-cover opacity-70 transition-opacity duration-150 ease-out will-change-[opacity,transform]"
+        style={{
+          opacity: Math.max(0, 0.7 * (1 - p)),
+          transform: `scale(${1 + p * 0.08})`,
+        }}
       />
+      {/* Fallback / blend target: mountain still — fades in while scrolling */}
       <img
         src={heroImg}
         alt=""
-        className="absolute inset-0 h-full w-full object-cover opacity-0"
         width={1920}
         height={1080}
+        className="absolute inset-0 h-full w-full object-cover transition-opacity duration-150 ease-out will-change-[opacity] motion-reduce:transition-none"
+        style={{ opacity: p }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-[#0a1628]/40 via-transparent to-[#0a1628]" />
       <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628]/60 via-transparent to-[#0a1628]/60" />
@@ -53,13 +70,6 @@ export function Hero() {
 
         <ArrowDown className="absolute bottom-8 h-5 w-5 animate-bounce text-white/50" />
       </div>
-
-      <style>{`
-        @keyframes kenburns {
-          0% { transform: scale(1) translate(0, 0); }
-          100% { transform: scale(1.12) translate(-1%, -2%); }
-        }
-      `}</style>
     </section>
   );
 }
