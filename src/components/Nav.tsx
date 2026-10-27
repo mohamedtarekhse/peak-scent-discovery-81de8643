@@ -1,7 +1,7 @@
 import { Languages } from "lucide-react";
 import { useLang } from "@/i18n/LangProvider";
-// ODD brand logo (placeholder mark — replace src/assets/odd-logo.svg with the official file when provided)
-import oddLogo from "@/assets/odd-logo.svg";
+// ODD official brand logo (from Drive upload)
+import oddLogo from "@/assets/odd-logo.jpg";
 
 export function Nav() {
   const { t, lang, setLang } = useLang();
