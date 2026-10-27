@@ -3,7 +3,9 @@ import { ArrowDown } from "lucide-react";
 import { useLang } from "@/i18n/LangProvider";
 import { useScrollProgress } from "@/hooks/use-scroll-progress";
 import heroImg from "@/assets/hero-mountain.jpg";
-import heroVideo from "@/assets/hero.mp4.asset.json";
+// ODD hero video — served from /public so it deploys with the site (no Lovable storage dependency)
+const heroVideoUrl = "/odd-hero.mp4";
+const heroPosterUrl = "/odd-hero-poster.jpg";
 
 export function Hero() {
   const { t } = useLang();
@@ -19,12 +21,12 @@ export function Hero() {
     >
       {/* ODD hero video — fades out while scrolling */}
       <video
-        src={heroVideo.url}
+        src={heroVideoUrl}
         autoPlay
         muted
         loop
         playsInline
-        poster={heroImg}
+        poster={heroPosterUrl}
         aria-hidden="true"
         className="absolute inset-0 h-full w-full object-cover opacity-70 transition-opacity duration-150 ease-out will-change-[opacity,transform]"
         style={{
