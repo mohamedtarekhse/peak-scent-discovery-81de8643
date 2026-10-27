@@ -1,0 +1,1024 @@
+//#region node_modules/.nitro/vite/services/ssr/assets/catalog-DzkgSmcn.js
+var dior_homme_png_asset_default = {
+	version: 1,
+	asset_id: "1ebe8bfe-1d53-453f-a719-12454f6f9028",
+	project_id: "b04409ee-c24b-4aa3-884b-bb4419198637",
+	url: "/__l5e/assets-v1/1ebe8bfe-1d53-453f-a719-12454f6f9028/dior-homme.png",
+	r2_key: "a/v1/b04409ee-c24b-4aa3-884b-bb4419198637/1ebe8bfe-1d53-453f-a719-12454f6f9028/dior-homme.png",
+	original_filename: "dior-homme.png",
+	size: 144581,
+	content_type: "image/png",
+	created_at: "2026-06-10T18:38:22Z"
+};
+var bleu_de_chanel_png_asset_default = {
+	version: 1,
+	asset_id: "136f8f90-9dfb-43ff-9e4d-020097cc48e3",
+	project_id: "b04409ee-c24b-4aa3-884b-bb4419198637",
+	url: "/__l5e/assets-v1/136f8f90-9dfb-43ff-9e4d-020097cc48e3/bleu-de-chanel.png",
+	r2_key: "a/v1/b04409ee-c24b-4aa3-884b-bb4419198637/136f8f90-9dfb-43ff-9e4d-020097cc48e3/bleu-de-chanel.png",
+	original_filename: "bleu-de-chanel.png",
+	size: 144339,
+	content_type: "image/png",
+	created_at: "2026-06-10T18:38:26Z"
+};
+var the_one_png_asset_default = {
+	version: 1,
+	asset_id: "65169d62-88e1-4c26-8626-8e9aa9b12366",
+	project_id: "b04409ee-c24b-4aa3-884b-bb4419198637",
+	url: "/__l5e/assets-v1/65169d62-88e1-4c26-8626-8e9aa9b12366/the-one.png",
+	r2_key: "a/v1/b04409ee-c24b-4aa3-884b-bb4419198637/65169d62-88e1-4c26-8626-8e9aa9b12366/the-one.png",
+	original_filename: "the-one.png",
+	size: 143325,
+	content_type: "image/png",
+	created_at: "2026-06-10T18:38:29Z"
+};
+var acqua_di_gio_png_asset_default = {
+	version: 1,
+	asset_id: "85bfc492-f85d-4e5d-bd80-54a2f2cdac7c",
+	project_id: "b04409ee-c24b-4aa3-884b-bb4419198637",
+	url: "/__l5e/assets-v1/85bfc492-f85d-4e5d-bd80-54a2f2cdac7c/acqua-di-gio.png",
+	r2_key: "a/v1/b04409ee-c24b-4aa3-884b-bb4419198637/85bfc492-f85d-4e5d-bd80-54a2f2cdac7c/acqua-di-gio.png",
+	original_filename: "acqua-di-gio.png",
+	size: 152045,
+	content_type: "image/png",
+	created_at: "2026-06-10T18:38:32Z"
+};
+var ysl_y_png_asset_default = {
+	version: 1,
+	asset_id: "201acc71-89e3-42bd-b2f8-6da326dfde83",
+	project_id: "b04409ee-c24b-4aa3-884b-bb4419198637",
+	url: "/__l5e/assets-v1/201acc71-89e3-42bd-b2f8-6da326dfde83/ysl-y.png",
+	r2_key: "a/v1/b04409ee-c24b-4aa3-884b-bb4419198637/201acc71-89e3-42bd-b2f8-6da326dfde83/ysl-y.png",
+	original_filename: "ysl-y.png",
+	size: 146728,
+	content_type: "image/png",
+	created_at: "2026-06-10T18:38:36Z"
+};
+var spicebomb_png_asset_default = {
+	version: 1,
+	asset_id: "22623d4d-6bcc-477c-89b1-4ddfca110315",
+	project_id: "b04409ee-c24b-4aa3-884b-bb4419198637",
+	url: "/__l5e/assets-v1/22623d4d-6bcc-477c-89b1-4ddfca110315/spicebomb.png",
+	r2_key: "a/v1/b04409ee-c24b-4aa3-884b-bb4419198637/22623d4d-6bcc-477c-89b1-4ddfca110315/spicebomb.png",
+	original_filename: "spicebomb.png",
+	size: 146563,
+	content_type: "image/png",
+	created_at: "2026-06-10T18:38:40Z"
+};
+var al_thaer_png_asset_default = {
+	version: 1,
+	asset_id: "29a5ec0d-58d0-4688-98e4-603684c61d5a",
+	project_id: "b04409ee-c24b-4aa3-884b-bb4419198637",
+	url: "/__l5e/assets-v1/29a5ec0d-58d0-4688-98e4-603684c61d5a/al-thaer.png",
+	r2_key: "a/v1/b04409ee-c24b-4aa3-884b-bb4419198637/29a5ec0d-58d0-4688-98e4-603684c61d5a/al-thaer.png",
+	original_filename: "al-thaer.png",
+	size: 136745,
+	content_type: "image/png",
+	created_at: "2026-06-10T18:38:43Z"
+};
+var aura_avenir_default = "/assets/aura-avenir-B0gZY4V8.jpg";
+var aura_sahara_default = "/assets/aura-sahara-BvTXxZSW.jpg";
+var aura_crimson_540_default = "/assets/aura-crimson-540-BltHo1Gl.jpg";
+var aura_layl_default = "/assets/aura-layl-DzvdVdmt.jpg";
+var aura_olympus_default = "/assets/aura-olympus-DwJMeSZF.jpg";
+var aura_coquette_default = "/assets/aura-coquette-DCrY69Fc.jpg";
+var aura_opium_noir_default = "/assets/aura-opium-noir-DShu1--W.jpg";
+var aura_velvet_oud_default = "/assets/aura-velvet-oud-C69DYMrX.jpg";
+var catalog = [
+	{
+		id: "dior-homme",
+		name: "Dior Homme",
+		nameAr: "ديور أوم",
+		brand: "Aura",
+		inspiredBy: "Dior Homme — Dior",
+		inspiredByAr: "ديور أوم — ديور",
+		notes: [
+			"Iris",
+			"Cocoa",
+			"Leather",
+			"Vetiver"
+		],
+		family: "Woody / Powdery",
+		gender: "M",
+		price: 850,
+		image: dior_homme_png_asset_default.url
+	},
+	{
+		id: "bleu-de-chanel",
+		name: "Bleu de Chanel",
+		nameAr: "بلو دو شانيل",
+		brand: "Aura",
+		inspiredBy: "Bleu de Chanel — Chanel",
+		inspiredByAr: "بلو دو شانيل — شانيل",
+		notes: [
+			"Citrus",
+			"Pink Pepper",
+			"Ginger",
+			"Sandalwood",
+			"Cedar"
+		],
+		family: "Aromatic / Woody",
+		gender: "M",
+		price: 950,
+		image: bleu_de_chanel_png_asset_default.url
+	},
+	{
+		id: "the-one",
+		name: "The One",
+		nameAr: "ذا ون",
+		brand: "Aura",
+		inspiredBy: "The One — Dolce & Gabbana",
+		inspiredByAr: "ذا ون — دولتشي آند غابانا",
+		notes: [
+			"Bergamot",
+			"Tobacco",
+			"Amber",
+			"Cardamom"
+		],
+		family: "Oriental / Spicy",
+		gender: "M",
+		price: 900,
+		image: the_one_png_asset_default.url
+	},
+	{
+		id: "acqua-di-gio",
+		name: "Acqua di Giò",
+		nameAr: "أكوا دي جيو",
+		brand: "Aura",
+		inspiredBy: "Acqua di Giò — Giorgio Armani",
+		inspiredByAr: "أكوا دي جيو — جورجيو أرماني",
+		notes: [
+			"Sea Notes",
+			"Bergamot",
+			"Jasmine",
+			"Patchouli"
+		],
+		family: "Aquatic / Aromatic",
+		gender: "M",
+		price: 880,
+		image: acqua_di_gio_png_asset_default.url
+	},
+	{
+		id: "ysl-y",
+		name: "Yves Saint Laurent Y",
+		nameAr: "واي إيف سان لوران",
+		brand: "Aura",
+		inspiredBy: "Y EDP — Yves Saint Laurent",
+		inspiredByAr: "واي — إيف سان لوران",
+		notes: [
+			"Apple",
+			"Sage",
+			"Geranium",
+			"Ambergris"
+		],
+		family: "Aromatic / Fougère",
+		gender: "M",
+		price: 920,
+		image: ysl_y_png_asset_default.url
+	},
+	{
+		id: "spicebomb",
+		name: "Spicebomb",
+		nameAr: "سبايس بومب",
+		brand: "Aura",
+		inspiredBy: "Spicebomb — Viktor & Rolf",
+		inspiredByAr: "سبايس بومب — فيكتور آند رولف",
+		notes: [
+			"Pink Pepper",
+			"Saffron",
+			"Leather",
+			"Tobacco"
+		],
+		family: "Oriental / Spicy",
+		gender: "M",
+		price: 870,
+		image: spicebomb_png_asset_default.url
+	},
+	{
+		id: "al-thaer",
+		name: "Al Tha'er",
+		nameAr: "الثائر",
+		brand: "Aura",
+		notes: [
+			"Oud",
+			"Rose",
+			"Saffron",
+			"Musk",
+			"Amber"
+		],
+		family: "Oriental / Oud",
+		gender: "U",
+		price: 1200,
+		image: al_thaer_png_asset_default.url
+	},
+	{
+		id: "avenir",
+		name: "Avenir",
+		nameAr: "أفينير",
+		brand: "Aura",
+		inspiredBy: "Aventus — Creed",
+		inspiredByAr: "أفنتوس — كريد",
+		notes: [
+			"Pineapple",
+			"Blackcurrant",
+			"Birch",
+			"Musk",
+			"Oakmoss"
+		],
+		family: "Fruity / Chypre",
+		gender: "M",
+		price: 1e3,
+		image: aura_avenir_default
+	},
+	{
+		id: "sahara",
+		name: "Sahara",
+		nameAr: "صحارى",
+		brand: "Aura",
+		inspiredBy: "Sauvage — Dior",
+		inspiredByAr: "سوفاج — ديور",
+		notes: [
+			"Bergamot",
+			"Sichuan Pepper",
+			"Ambroxan",
+			"Lavender"
+		],
+		family: "Aromatic / Fresh Spicy",
+		gender: "M",
+		price: 900,
+		image: aura_sahara_default
+	},
+	{
+		id: "crimson-540",
+		name: "Crimson 540",
+		nameAr: "كريمسون ٥٤٠",
+		brand: "Aura",
+		inspiredBy: "Baccarat Rouge 540 — Maison Francis Kurkdjian",
+		inspiredByAr: "باكارات روج ٥٤٠ — ميزون فرانسيس كركجان",
+		notes: [
+			"Saffron",
+			"Jasmine",
+			"Amberwood",
+			"Cedar"
+		],
+		family: "Amber / Floral",
+		gender: "U",
+		price: 1100,
+		image: aura_crimson_540_default
+	},
+	{
+		id: "layl",
+		name: "Layl",
+		nameAr: "ليل",
+		brand: "Aura",
+		inspiredBy: "La Nuit de L'Homme — Yves Saint Laurent",
+		inspiredByAr: "لا نوي دو لوم — إيف سان لوران",
+		notes: [
+			"Cardamom",
+			"Lavender",
+			"Cedar",
+			"Vetiver"
+		],
+		family: "Woody / Spicy",
+		gender: "M",
+		price: 880,
+		image: aura_layl_default
+	},
+	{
+		id: "olympus",
+		name: "Olympus",
+		nameAr: "أوليمبوس",
+		brand: "Aura",
+		inspiredBy: "Eros — Versace",
+		inspiredByAr: "إيروس — فيرزاتشي",
+		notes: [
+			"Mint",
+			"Green Apple",
+			"Tonka Bean",
+			"Vanilla",
+			"Cedar"
+		],
+		family: "Aromatic / Fougère",
+		gender: "M",
+		price: 860,
+		image: aura_olympus_default
+	},
+	{
+		id: "coquette",
+		name: "Coquette",
+		nameAr: "كوكيت",
+		brand: "Aura",
+		inspiredBy: "Coco Mademoiselle — Chanel",
+		inspiredByAr: "كوكو مادموزيل — شانيل",
+		notes: [
+			"Orange",
+			"Rose",
+			"Jasmine",
+			"Patchouli",
+			"White Musk"
+		],
+		family: "Floral / Chypre",
+		gender: "F",
+		price: 950,
+		image: aura_coquette_default
+	},
+	{
+		id: "opium-noir",
+		name: "Opium Noir",
+		nameAr: "أوبيوم نوار",
+		brand: "Aura",
+		inspiredBy: "Black Opium — Yves Saint Laurent",
+		inspiredByAr: "بلاك أوبيوم — إيف سان لوران",
+		notes: [
+			"Coffee",
+			"Vanilla",
+			"Orange Blossom",
+			"White Flowers"
+		],
+		family: "Amber / Vanilla",
+		gender: "F",
+		price: 930,
+		image: aura_opium_noir_default
+	},
+	{
+		id: "velvet-oud",
+		name: "Velvet Oud",
+		nameAr: "فيلفيت عود",
+		brand: "Aura",
+		inspiredBy: "Oud Wood — Tom Ford",
+		inspiredByAr: "عود وود — توم فورد",
+		notes: [
+			"Oud",
+			"Rosewood",
+			"Cardamom",
+			"Sandalwood",
+			"Tonka"
+		],
+		family: "Woody / Oud",
+		gender: "U",
+		price: 1150,
+		image: aura_velvet_oud_default
+	},
+	{
+		id: "invictus",
+		name: "Invictus",
+		nameAr: "إنفيكتوس",
+		brand: "Aura",
+		inspiredBy: "Invictus — Paco Rabanne",
+		inspiredByAr: "إنفيكتوس — باكو رابان",
+		notes: [
+			"Grapefruit",
+			"Marine Notes",
+			"Bay Leaf",
+			"Guaiac Wood",
+			"Ambergris"
+		],
+		family: "Aquatic / Woody",
+		gender: "M",
+		price: 870,
+		image: aura_olympus_default
+	},
+	{
+		id: "one-million",
+		name: "One Million",
+		nameAr: "ون ميليون",
+		brand: "Aura",
+		inspiredBy: "1 Million — Paco Rabanne",
+		inspiredByAr: "ون ميليون — باكو رابان",
+		notes: [
+			"Blood Mandarin",
+			"Cinnamon",
+			"Leather",
+			"Amber"
+		],
+		family: "Spicy / Leather",
+		gender: "M",
+		price: 880,
+		image: spicebomb_png_asset_default.url
+	},
+	{
+		id: "tobacco-vanille",
+		name: "Tobacco Vanille",
+		nameAr: "توباكو فانيل",
+		brand: "Aura",
+		inspiredBy: "Tobacco Vanille — Tom Ford",
+		inspiredByAr: "توباكو فانيل — توم فورد",
+		notes: [
+			"Tobacco Leaf",
+			"Vanilla",
+			"Cocoa",
+			"Tonka",
+			"Dry Fruits"
+		],
+		family: "Oriental / Spicy",
+		gender: "U",
+		price: 1300,
+		image: aura_opium_noir_default
+	},
+	{
+		id: "oud-satin-mood",
+		name: "Oud Satin Mood",
+		nameAr: "عود ساتان مود",
+		brand: "Aura",
+		inspiredBy: "Oud Satin Mood — Maison Francis Kurkdjian",
+		inspiredByAr: "عود ساتان مود — ميزون فرانسيس كركجان",
+		notes: [
+			"Rose",
+			"Violet",
+			"Oud",
+			"Vanilla",
+			"Benzoin"
+		],
+		family: "Amber / Floral",
+		gender: "U",
+		price: 1250,
+		image: aura_velvet_oud_default
+	},
+	{
+		id: "lattafa-asad",
+		name: "Asad",
+		nameAr: "أسد",
+		brand: "Aura",
+		inspiredBy: "Asad — Lattafa",
+		inspiredByAr: "أسد — لطافة",
+		notes: [
+			"Pineapple",
+			"Bergamot",
+			"Birch",
+			"Patchouli",
+			"Musk"
+		],
+		family: "Fruity / Chypre",
+		gender: "M",
+		price: 750,
+		image: aura_avenir_default
+	},
+	{
+		id: "khamrah",
+		name: "Khamrah",
+		nameAr: "خمرة",
+		brand: "Aura",
+		inspiredBy: "Khamrah — Lattafa",
+		inspiredByAr: "خمرة — لطافة",
+		notes: [
+			"Cinnamon",
+			"Dates",
+			"Mahonial",
+			"Vanilla",
+			"Tonka"
+		],
+		family: "Amber / Gourmand",
+		gender: "U",
+		price: 800,
+		image: aura_opium_noir_default
+	},
+	{
+		id: "yara",
+		name: "Yara",
+		nameAr: "يارا",
+		brand: "Aura",
+		inspiredBy: "Yara — Lattafa",
+		inspiredByAr: "يارا — لطافة",
+		notes: [
+			"Orchid",
+			"Vanilla",
+			"Tonka Bean",
+			"Heliotrope"
+		],
+		family: "Floral / Vanilla",
+		gender: "F",
+		price: 720,
+		image: aura_coquette_default
+	},
+	{
+		id: "ameer-al-oud",
+		name: "Ameer Al Oud",
+		nameAr: "أمير العود",
+		brand: "Aura",
+		inspiredBy: "Ameer Al Oud — Lattafa",
+		inspiredByAr: "أمير العود — لطافة",
+		notes: [
+			"Oud",
+			"Saffron",
+			"Rose",
+			"Amber",
+			"Musk"
+		],
+		family: "Oriental / Oud",
+		gender: "U",
+		price: 950,
+		image: aura_velvet_oud_default
+	},
+	{
+		id: "sauvage-elixir",
+		name: "Sauvage Elixir",
+		nameAr: "سوفاج إكسير",
+		brand: "Aura",
+		inspiredBy: "Sauvage Elixir — Dior",
+		inspiredByAr: "سوفاج إكسير — ديور",
+		notes: [
+			"Grapefruit",
+			"Cinnamon",
+			"Lavender",
+			"Licorice",
+			"Amber"
+		],
+		family: "Spicy / Woody",
+		gender: "M",
+		price: 1200,
+		image: aura_sahara_default
+	},
+	{
+		id: "aventus-her",
+		name: "Aventus for Her",
+		nameAr: "أفنتوس فور هير",
+		brand: "Aura",
+		inspiredBy: "Aventus for Her — Creed",
+		inspiredByAr: "أفنتوس فور هير — كريد",
+		notes: [
+			"Pink Pepper",
+			"Apple",
+			"Rose",
+			"Sandalwood",
+			"Musk"
+		],
+		family: "Fruity / Chypre",
+		gender: "F",
+		price: 1100,
+		image: aura_coquette_default
+	},
+	{
+		id: "delina",
+		name: "Delina",
+		nameAr: "ديلينا",
+		brand: "Aura",
+		inspiredBy: "Delina — Parfums de Marly",
+		inspiredByAr: "ديلينا — بارفان دو مارلي",
+		notes: [
+			"Lychee",
+			"Turkish Rose",
+			"Peony",
+			"Vanilla",
+			"Musk"
+		],
+		family: "Floral / Fruity",
+		gender: "F",
+		price: 1150,
+		image: aura_coquette_default
+	},
+	{
+		id: "layton",
+		name: "Layton",
+		nameAr: "لايتون",
+		brand: "Aura",
+		inspiredBy: "Layton — Parfums de Marly",
+		inspiredByAr: "لايتون — بارفان دو مارلي",
+		notes: [
+			"Apple",
+			"Lavender",
+			"Cardamom",
+			"Vanilla",
+			"Sandalwood"
+		],
+		family: "Oriental / Woody",
+		gender: "M",
+		price: 1150,
+		image: aura_layl_default
+	},
+	{
+		id: "khamrah-qahwa",
+		name: "Khamrah Qahwa",
+		nameAr: "خمرة قهوة",
+		brand: "Aura",
+		inspiredBy: "Khamrah Qahwa — Lattafa",
+		inspiredByAr: "خمرة قهوة — لطافة",
+		notes: [
+			"Coffee",
+			"Cardamom",
+			"Dates",
+			"Tonka",
+			"Amber"
+		],
+		family: "Gourmand / Amber",
+		gender: "U",
+		price: 820,
+		image: aura_opium_noir_default
+	},
+	{
+		id: "fakhar",
+		name: "Fakhar",
+		nameAr: "فخر",
+		brand: "Aura",
+		inspiredBy: "Fakhar — Lattafa",
+		inspiredByAr: "فخر — لطافة",
+		notes: [
+			"Apple",
+			"Bergamot",
+			"Patchouli",
+			"Amber",
+			"Vanilla"
+		],
+		family: "Fruity / Amber",
+		gender: "M",
+		price: 780,
+		image: aura_avenir_default
+	},
+	{
+		id: "oud-for-greatness",
+		name: "Oud for Greatness",
+		nameAr: "عود فور غريتنس",
+		brand: "Aura",
+		inspiredBy: "Oud for Greatness — Initio",
+		inspiredByAr: "عود فور غريتنس — إنيشيو",
+		notes: [
+			"Saffron",
+			"Lavender",
+			"Oud",
+			"Patchouli",
+			"Musk"
+		],
+		family: "Oriental / Oud",
+		gender: "U",
+		price: 1400,
+		image: aura_velvet_oud_default
+	},
+	{
+		id: "side-effect",
+		name: "Side Effect",
+		nameAr: "سايد إفكت",
+		brand: "Aura",
+		inspiredBy: "Side Effect — Initio",
+		inspiredByAr: "سايد إفكت — إنيشيو",
+		notes: [
+			"Tobacco",
+			"Rum",
+			"Cinnamon",
+			"Vanilla",
+			"Saffron"
+		],
+		family: "Spicy / Tobacco",
+		gender: "U",
+		price: 1350,
+		image: aura_opium_noir_default
+	},
+	{
+		id: "grand-soir",
+		name: "Grand Soir",
+		nameAr: "غران سوار",
+		brand: "Aura",
+		inspiredBy: "Grand Soir — Maison Francis Kurkdjian",
+		inspiredByAr: "غران سوار — ميزون فرانسيس كركجان",
+		notes: [
+			"Amber",
+			"Benzoin",
+			"Vanilla",
+			"Tonka",
+			"Cinnamon"
+		],
+		family: "Amber / Sweet",
+		gender: "U",
+		price: 1300,
+		image: aura_crimson_540_default
+	},
+	{
+		id: "stronger-with-you",
+		name: "Stronger With You",
+		nameAr: "سترونغر ويذ يو",
+		brand: "Aura",
+		inspiredBy: "Stronger With You — Emporio Armani",
+		inspiredByAr: "سترونغر ويذ يو — إمبوريو أرماني",
+		notes: [
+			"Cardamom",
+			"Pink Pepper",
+			"Chestnut",
+			"Vanilla"
+		],
+		family: "Aromatic / Gourmand",
+		gender: "M",
+		price: 870,
+		image: ysl_y_png_asset_default.url
+	},
+	{
+		id: "le-male-elixir",
+		name: "Le Male Elixir",
+		nameAr: "لو مال إكسير",
+		brand: "Aura",
+		inspiredBy: "Le Male Elixir — Jean Paul Gaultier",
+		inspiredByAr: "لو مال إكسير — جان بول غوتييه",
+		notes: [
+			"Lavender",
+			"Mint",
+			"Tobacco",
+			"Vanilla",
+			"Honey"
+		],
+		family: "Oriental / Aromatic",
+		gender: "M",
+		price: 950,
+		image: spicebomb_png_asset_default.url
+	},
+	{
+		id: "scandal-pour-homme",
+		name: "Scandal Pour Homme",
+		nameAr: "سكاندال بور أوم",
+		brand: "Aura",
+		inspiredBy: "Scandal Pour Homme — Jean Paul Gaultier",
+		inspiredByAr: "سكاندال بور أوم — جان بول غوتييه",
+		notes: [
+			"Caramel",
+			"Mandarin",
+			"Tonka Bean",
+			"Vetiver"
+		],
+		family: "Gourmand / Woody",
+		gender: "M",
+		price: 900,
+		image: the_one_png_asset_default.url
+	},
+	{
+		id: "phantom",
+		name: "Phantom",
+		nameAr: "فانتوم",
+		brand: "Aura",
+		inspiredBy: "Phantom — Paco Rabanne",
+		inspiredByAr: "فانتوم — باكو رابان",
+		notes: [
+			"Lavender",
+			"Lemon",
+			"Apple",
+			"Vetiver",
+			"Patchouli"
+		],
+		family: "Aromatic / Fresh",
+		gender: "M",
+		price: 880,
+		image: aura_olympus_default
+	},
+	{
+		id: "explorer",
+		name: "Explorer",
+		nameAr: "إكسبلورر",
+		brand: "Aura",
+		inspiredBy: "Explorer — Montblanc",
+		inspiredByAr: "إكسبلورر — مون بلان",
+		notes: [
+			"Bergamot",
+			"Sage",
+			"Leather",
+			"Patchouli",
+			"Vetiver"
+		],
+		family: "Woody / Chypre",
+		gender: "M",
+		price: 850,
+		image: aura_sahara_default
+	},
+	{
+		id: "noir-extreme",
+		name: "Noir Extreme",
+		nameAr: "نوار إكستريم",
+		brand: "Aura",
+		inspiredBy: "Noir Extreme — Tom Ford",
+		inspiredByAr: "نوار إكستريم — توم فورد",
+		notes: [
+			"Cardamom",
+			"Saffron",
+			"Kulfi",
+			"Amber",
+			"Vanilla"
+		],
+		family: "Oriental / Gourmand",
+		gender: "M",
+		price: 1300,
+		image: aura_opium_noir_default
+	},
+	{
+		id: "ombre-leather",
+		name: "Ombre Leather",
+		nameAr: "أومبري ليذر",
+		brand: "Aura",
+		inspiredBy: "Ombré Leather — Tom Ford",
+		inspiredByAr: "أومبري ليذر — توم فورد",
+		notes: [
+			"Leather",
+			"Cardamom",
+			"Jasmine",
+			"Patchouli",
+			"Amber"
+		],
+		family: "Leather / Woody",
+		gender: "U",
+		price: 1250,
+		image: aura_velvet_oud_default
+	},
+	{
+		id: "lost-cherry",
+		name: "Lost Cherry",
+		nameAr: "لوست تشيري",
+		brand: "Aura",
+		inspiredBy: "Lost Cherry — Tom Ford",
+		inspiredByAr: "لوست تشيري — توم فورد",
+		notes: [
+			"Black Cherry",
+			"Almond",
+			"Tonka",
+			"Sandalwood",
+			"Vetiver"
+		],
+		family: "Fruity / Gourmand",
+		gender: "U",
+		price: 1350,
+		image: aura_coquette_default
+	},
+	{
+		id: "good-girl",
+		name: "Good Girl",
+		nameAr: "غود غيرل",
+		brand: "Aura",
+		inspiredBy: "Good Girl — Carolina Herrera",
+		inspiredByAr: "غود غيرل — كارولينا هيريرا",
+		notes: [
+			"Almond",
+			"Coffee",
+			"Tuberose",
+			"Jasmine",
+			"Cocoa"
+		],
+		family: "Floral / Gourmand",
+		gender: "F",
+		price: 950,
+		image: aura_coquette_default
+	},
+	{
+		id: "libre",
+		name: "Libre",
+		nameAr: "ليبر",
+		brand: "Aura",
+		inspiredBy: "Libre — Yves Saint Laurent",
+		inspiredByAr: "ليبر — إيف سان لوران",
+		notes: [
+			"Lavender",
+			"Orange Blossom",
+			"Vanilla",
+			"Musk",
+			"Cedar"
+		],
+		family: "Floral / Aromatic",
+		gender: "F",
+		price: 950,
+		image: aura_coquette_default
+	},
+	{
+		id: "miss-dior",
+		name: "Miss Dior",
+		nameAr: "ميس ديور",
+		brand: "Aura",
+		inspiredBy: "Miss Dior — Dior",
+		inspiredByAr: "ميس ديور — ديور",
+		notes: [
+			"Rose",
+			"Peony",
+			"Lily of the Valley",
+			"Iris",
+			"Musk"
+		],
+		family: "Floral / Chypre",
+		gender: "F",
+		price: 1e3,
+		image: aura_coquette_default
+	},
+	{
+		id: "jadore",
+		name: "J'adore",
+		nameAr: "جادور",
+		brand: "Aura",
+		inspiredBy: "J'adore — Dior",
+		inspiredByAr: "جادور — ديور",
+		notes: [
+			"Ylang-Ylang",
+			"Jasmine",
+			"Rose",
+			"Pear",
+			"Vanilla"
+		],
+		family: "Floral",
+		gender: "F",
+		price: 1e3,
+		image: aura_coquette_default
+	},
+	{
+		id: "la-vie-est-belle",
+		name: "La Vie Est Belle",
+		nameAr: "لا في إيه بيل",
+		brand: "Aura",
+		inspiredBy: "La Vie Est Belle — Lancôme",
+		inspiredByAr: "لا في إيه بيل — لانكوم",
+		notes: [
+			"Iris",
+			"Praline",
+			"Pear",
+			"Patchouli",
+			"Vanilla"
+		],
+		family: "Floral / Gourmand",
+		gender: "F",
+		price: 950,
+		image: aura_coquette_default
+	},
+	{
+		id: "alien",
+		name: "Alien",
+		nameAr: "إيليان",
+		brand: "Aura",
+		inspiredBy: "Alien — Mugler",
+		inspiredByAr: "إيليان — موغلر",
+		notes: [
+			"Jasmine Sambac",
+			"Cashmeran",
+			"Amber",
+			"White Woods"
+		],
+		family: "Floral / Amber",
+		gender: "F",
+		price: 980,
+		image: aura_opium_noir_default
+	},
+	{
+		id: "angel",
+		name: "Angel",
+		nameAr: "أنجل",
+		brand: "Aura",
+		inspiredBy: "Angel — Mugler",
+		inspiredByAr: "أنجل — موغلر",
+		notes: [
+			"Praline",
+			"Chocolate",
+			"Patchouli",
+			"Caramel",
+			"Vanilla"
+		],
+		family: "Gourmand / Oriental",
+		gender: "F",
+		price: 980,
+		image: aura_opium_noir_default
+	},
+	{
+		id: "212-vip-black",
+		name: "212 VIP Black",
+		nameAr: "٢١٢ في آي بي بلاك",
+		brand: "Aura",
+		inspiredBy: "212 VIP Black — Carolina Herrera",
+		inspiredByAr: "٢١٢ في آي بي بلاك — كارولينا هيريرا",
+		notes: [
+			"Absinthe",
+			"Caviar",
+			"Vanilla",
+			"Leather",
+			"Tonka"
+		],
+		family: "Oriental / Gourmand",
+		gender: "M",
+		price: 920,
+		image: the_one_png_asset_default.url
+	},
+	{
+		id: "polo-blue",
+		name: "Polo Blue",
+		nameAr: "بولو بلو",
+		brand: "Aura",
+		inspiredBy: "Polo Blue — Ralph Lauren",
+		inspiredByAr: "بولو بلو — رالف لورين",
+		notes: [
+			"Melon",
+			"Cucumber",
+			"Basil",
+			"Suede",
+			"Patchouli"
+		],
+		family: "Aromatic / Aquatic",
+		gender: "M",
+		price: 830,
+		image: acqua_di_gio_png_asset_default.url
+	},
+	{
+		id: "boss-bottled",
+		name: "Boss Bottled",
+		nameAr: "بوس بوتلد",
+		brand: "Aura",
+		inspiredBy: "Boss Bottled — Hugo Boss",
+		inspiredByAr: "بوس بوتلد — هوغو بوس",
+		notes: [
+			"Apple",
+			"Cinnamon",
+			"Geranium",
+			"Sandalwood",
+			"Vanilla"
+		],
+		family: "Woody / Spicy",
+		gender: "M",
+		price: 820,
+		image: dior_homme_png_asset_default.url
+	}
+];
+//#endregion
+export { catalog as t };
