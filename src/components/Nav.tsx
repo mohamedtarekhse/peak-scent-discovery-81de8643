@@ -1,18 +1,18 @@
 import { Languages } from "lucide-react";
 import { useLang } from "@/i18n/LangProvider";
-import auraLogo from "@/assets/aura-logo.png";
+// ODD brand logo (placeholder mark — replace src/assets/odd-logo.svg with the official file when provided)
+import oddLogo from "@/assets/odd-logo.svg";
 
 export function Nav() {
   const { t, lang, setLang } = useLang();
   return (
     <header className="fixed inset-x-0 top-0 z-40 border-b border-white/10 bg-[#0a1628]/80 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
-        <a href="#home" className="flex items-center" aria-label="Aura">
+        <a href="#home" className="flex items-center" aria-label="ODD">
           <img
-            src={auraLogo}
-            alt="Aura"
-            className="h-8 w-auto invert brightness-0 contrast-200"
-            style={{ filter: "invert(1) brightness(2)" }}
+            src={oddLogo}
+            alt="ODD"
+            className="h-8 w-auto"
           />
         </a>
         <nav className="hidden items-center gap-8 text-sm text-white/70 md:flex">

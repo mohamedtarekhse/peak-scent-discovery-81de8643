@@ -25,7 +25,7 @@ export function Footer() {
           <a href={waLink(t.wa.greet)} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
             {t.footer.contact} · +20 102 319 6966
           </a>
-          <span>© {new Date().getFullYear()} Aura. {t.footer.rights}</span>
+          <span>© {new Date().getFullYear()} ODD. {t.footer.rights}</span>
         </div>
       </div>
     </footer>
