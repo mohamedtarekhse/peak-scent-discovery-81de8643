@@ -192,115 +192,150 @@ function getRouteRules(method, pathname) {
 //#endregion
 //#region #nitro/virtual/public-assets-data
 var public_assets_data_default = {
-	"/hero-mountain.jpg": {
-		"type": "image/jpeg",
-		"etag": "\"29b8c-YNUo0WdbFj9Ts1XzFfeYgNzyem0\"",
-		"mtime": "2026-10-28T16:58:00.421Z",
-		"size": 170892,
-		"path": "../hero-mountain.jpg"
-	},
 	"/odd-hero-poster.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"157ba-dL9LLLmJoe4FQa0o/JH1Q4uviyI\"",
-		"mtime": "2026-10-28T16:58:00.421Z",
+		"mtime": "2026-10-28T17:04:59.255Z",
 		"size": 87994,
 		"path": "../odd-hero-poster.jpg"
+	},
+	"/odd-icon.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"92c2-zxGHHmn97yg8Dk/JgWm01CrSFW0\"",
+		"mtime": "2026-10-28T17:04:59.255Z",
+		"size": 37570,
+		"path": "../odd-icon.jpg"
+	},
+	"/hero-mountain.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"29b8c-YNUo0WdbFj9Ts1XzFfeYgNzyem0\"",
+		"mtime": "2026-10-28T17:04:59.254Z",
+		"size": 170892,
+		"path": "../hero-mountain.jpg"
+	},
+	"/odd-logo-gemini-160.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"1520-ypRGgKNbnRm7h+jFuYzi1mr7drE\"",
+		"mtime": "2026-10-28T17:04:59.255Z",
+		"size": 5408,
+		"path": "../odd-logo-gemini-160.jpg"
+	},
+	"/odd-logo-gemini-240.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"275e-CspEi5obkInSxD3/YvNRsnSNEXQ\"",
+		"mtime": "2026-10-28T17:04:59.255Z",
+		"size": 10078,
+		"path": "../odd-logo-gemini-240.jpg"
+	},
+	"/odd-logo-gemini.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"9760-ZkS6ANkpU0XdTFbaF37p0KuxI4I\"",
+		"mtime": "2026-10-28T17:04:59.255Z",
+		"size": 38752,
+		"path": "../odd-logo-gemini.jpg"
+	},
+	"/odd-logo-lockup.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"5d83-6jICXlhTECZCoQ22sInRGgTY5wc\"",
+		"mtime": "2026-10-28T17:04:59.255Z",
+		"size": 23939,
+		"path": "../odd-logo-lockup.jpg"
 	},
 	"/odd-logo-navy-gold.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"4538-V8TKujFwDUlza/Cai2jWYxFbRaQ\"",
-		"mtime": "2026-10-28T16:58:00.422Z",
+		"mtime": "2026-10-28T17:04:59.255Z",
 		"size": 17720,
 		"path": "../odd-logo-navy-gold.jpg"
 	},
 	"/assets/aura-avenir-B0gZY4V8.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"18c54-6HTkl0seqJjSqIlDFHIHQps/rwI\"",
-		"mtime": "2026-10-28T16:57:59.856Z",
+		"mtime": "2026-10-28T17:04:58.737Z",
 		"size": 101460,
 		"path": "../assets/aura-avenir-B0gZY4V8.jpg"
 	},
 	"/assets/aura-coquette-DCrY69Fc.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"14a46-jCj0d21mXCAtZ7upQGnB/Ou5UTs\"",
-		"mtime": "2026-10-28T16:57:59.856Z",
+		"mtime": "2026-10-28T17:04:58.737Z",
 		"size": 84550,
 		"path": "../assets/aura-coquette-DCrY69Fc.jpg"
 	},
 	"/assets/aura-crimson-540-BltHo1Gl.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"1eedc-pmXO9y3cJ75kDfrlXPznwZ2wQK0\"",
-		"mtime": "2026-10-28T16:57:59.856Z",
+		"mtime": "2026-10-28T17:04:58.737Z",
 		"size": 126684,
 		"path": "../assets/aura-crimson-540-BltHo1Gl.jpg"
 	},
 	"/assets/aura-layl-DzvdVdmt.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"19832-1hH1yt43J/CGMZCcJFrrhr60Q/A\"",
-		"mtime": "2026-10-28T16:57:59.856Z",
+		"mtime": "2026-10-28T17:04:58.737Z",
 		"size": 104498,
 		"path": "../assets/aura-layl-DzvdVdmt.jpg"
 	},
 	"/assets/aura-olympus-DwJMeSZF.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"298fa-f5mrw6iSqbp585Qh1f8U56J+KmE\"",
-		"mtime": "2026-10-28T16:57:59.857Z",
+		"mtime": "2026-10-28T17:04:58.737Z",
 		"size": 170234,
 		"path": "../assets/aura-olympus-DwJMeSZF.jpg"
 	},
 	"/assets/aura-opium-noir-DShu1--W.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"1824d-61SWLM/ojmSTHlNK/nGJelDKvj0\"",
-		"mtime": "2026-10-28T16:57:59.857Z",
+		"mtime": "2026-10-28T17:04:58.737Z",
 		"size": 98893,
 		"path": "../assets/aura-opium-noir-DShu1--W.jpg"
 	},
 	"/assets/aura-sahara-BvTXxZSW.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"1a18f-O1JiQUkS/6duR/wmzgO0QMD6eKE\"",
-		"mtime": "2026-10-28T16:57:59.857Z",
+		"mtime": "2026-10-28T17:04:58.737Z",
 		"size": 106895,
 		"path": "../assets/aura-sahara-BvTXxZSW.jpg"
 	},
 	"/assets/aura-velvet-oud-C69DYMrX.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"1c0dd-EttnGyTlA9w8Ix3+8xLm2x6pDf4\"",
-		"mtime": "2026-10-28T16:57:59.857Z",
+		"mtime": "2026-10-28T17:04:58.737Z",
 		"size": 114909,
 		"path": "../assets/aura-velvet-oud-C69DYMrX.jpg"
 	},
 	"/assets/hero-mountain-Cfcx5dQ9.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"29b8c-YNUo0WdbFj9Ts1XzFfeYgNzyem0\"",
-		"mtime": "2026-10-28T16:57:59.857Z",
+		"mtime": "2026-10-28T17:04:58.737Z",
 		"size": 170892,
 		"path": "../assets/hero-mountain-Cfcx5dQ9.jpg"
 	},
-	"/assets/routes-BXPQ7MFq.js": {
+	"/assets/index-B94Zi43V.js": {
 		"type": "text/javascript; charset=utf-8",
-		"etag": "\"ae4c-1/YVnENNA6tL2QG5CaVco+Sw4r4\"",
-		"mtime": "2026-10-28T16:57:59.856Z",
-		"size": 44620,
-		"path": "../assets/routes-BXPQ7MFq.js"
-	},
-	"/assets/styles-C5ZgthHT.css": {
-		"type": "text/css; charset=utf-8",
-		"etag": "\"15f89-z9aMmY41C7JTrHHQN+8KxyhiuFA\"",
-		"mtime": "2026-10-28T16:57:59.857Z",
-		"size": 89993,
-		"path": "../assets/styles-C5ZgthHT.css"
-	},
-	"/assets/index-Bx-qGdZh.js": {
-		"type": "text/javascript; charset=utf-8",
-		"etag": "\"5440b-ISfJNgLt6Gw41+usWwvhxtMCN40\"",
-		"mtime": "2026-10-28T16:57:59.856Z",
+		"etag": "\"5440b-RDXGhcN/oAh4xDQcnuAr2sZOMnE\"",
+		"mtime": "2026-10-28T17:04:58.737Z",
 		"size": 345099,
-		"path": "../assets/index-Bx-qGdZh.js"
+		"path": "../assets/index-B94Zi43V.js"
+	},
+	"/assets/routes-Cwtt-TGI.js": {
+		"type": "text/javascript; charset=utf-8",
+		"etag": "\"ae4c-PzttsaqT5Hjrd0jPbzhWv+AK0kU\"",
+		"mtime": "2026-10-28T17:04:58.737Z",
+		"size": 44620,
+		"path": "../assets/routes-Cwtt-TGI.js"
+	},
+	"/assets/styles-9xiE88-j.css": {
+		"type": "text/css; charset=utf-8",
+		"etag": "\"15f8f-3fR+fkdUPzvzW4YPDNfkm1u3QaQ\"",
+		"mtime": "2026-10-28T17:04:58.737Z",
+		"size": 89999,
+		"path": "../assets/styles-9xiE88-j.css"
 	},
 	"/odd-hero.mp4": {
 		"type": "video/mp4",
 		"etag": "\"2d43d0-mE1avvg4WtnKP2xBAFuYJqjZnEc\"",
-		"mtime": "2026-10-28T16:58:00.422Z",
+		"mtime": "2026-10-28T17:04:59.256Z",
 		"size": 2966480,
 		"path": "../odd-hero.mp4"
 	}
