@@ -158,3 +158,10 @@
   body { font-family: var(--font-sans); }
   .font-serif { font-family: var(--font-serif); }
 }
+
+/* Halve all border widths site-wide (1px -> 0.5px) for a finer, more premium line */
+@layer base {
+  *, ::before, ::after {
+    border-width: 0.5px;
+  }
+}

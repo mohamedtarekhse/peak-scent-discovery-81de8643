@@ -11,10 +11,10 @@ import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Aura — Fragrances From Above the Clouds" },
-      { name: "description", content: "Aura is a fragrance house born above the clouds. AI-matched scents, exclusive collection, and signature offers." },
-      { property: "og:title", content: "Aura — Fragrances" },
-      { property: "og:description", content: "AI-matched fragrances from the Aura house. Find your scent." },
+      { title: "ODD — Fragrances From Above the Clouds" },
+      { name: "description", content: "ODD is a fragrance house born above the clouds. AI-matched scents, exclusive collection, and signature offers." },
+      { property: "og:title", content: "ODD — Fragrances" },
+      { property: "og:description", content: "AI-matched fragrances from the ODD house. Find your scent." },
       { property: "og:type", content: "website" },
     ],
   }),
