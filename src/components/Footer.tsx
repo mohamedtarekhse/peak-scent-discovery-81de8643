@@ -21,7 +21,7 @@ export function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-white/40 md:flex-row">
-          <span className="font-serif text-lg tracking-[0.4em] text-white">AURA</span>
+          <span className="font-serif text-lg tracking-[0.4em] text-white">ODD</span>
           <a href={waLink(t.wa.greet)} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
             {t.footer.contact} · +20 102 319 6966
           </a>

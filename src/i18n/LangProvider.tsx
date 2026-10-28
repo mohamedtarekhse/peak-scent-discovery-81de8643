@@ -8,7 +8,7 @@ export function LangProvider({ children }: { children: ReactNode }) {
   const [lang, setLang] = useState<Lang>("en");
 
   useEffect(() => {
-    const stored = (typeof window !== "undefined" && localStorage.getItem("aura-lang")) as Lang | null;
+    const stored = (typeof window !== "undefined" && localStorage.getItem("odd-lang")) as Lang | null;
     if (stored === "ar" || stored === "en") setLang(stored);
   }, []);
 
@@ -16,7 +16,7 @@ export function LangProvider({ children }: { children: ReactNode }) {
     if (typeof document === "undefined") return;
     document.documentElement.lang = lang;
     document.documentElement.dir = translations[lang].dir;
-    try { localStorage.setItem("aura-lang", lang); } catch {}
+    try { localStorage.setItem("odd-lang", lang); } catch {}
   }, [lang]);
 
   return (
