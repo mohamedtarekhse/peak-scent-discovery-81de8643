@@ -1,8 +1,8 @@
 import { Languages } from "lucide-react";
 import { useLang } from "@/i18n/LangProvider";
-// ODD brand logo — client-provided artwork (gold lines on dark navy), trimmed and
-// composed into a wide navbar lockup. Served from public/ as-is, no CSS filters needed.
-import oddLogo from "/odd-logo-lockup.jpg";
+// ODD brand logo — client-provided SVG (vector). Gold-on-navy variant generated from
+// the original by remapping warm tones to the brand gold ramp; crisp at any size.
+import oddLogo from "/odd-logo-gold.svg";
 
 export function Nav() {
   const { t, lang, setLang } = useLang();
@@ -14,7 +14,7 @@ export function Nav() {
           <img
             src={oddLogo}
             alt="ODD"
-            className="h-[calc(100%-0.75rem)] w-auto max-w-[42vw] rounded-md object-contain ring-1 ring-[#d9b26a]/30 shadow-[0_0_18px_rgba(217,178,106,0.22)]"
+            className="h-[calc(100%-0.5rem)] w-auto max-w-[46vw] rounded-md object-contain ring-1 ring-[#d9b26a]/30 shadow-[0_0_18px_rgba(217,178,106,0.22)]"
           />
         </a>
         <nav className="hidden items-center gap-8 text-sm text-white/70 md:flex">
