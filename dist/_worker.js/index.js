@@ -195,112 +195,161 @@ var public_assets_data_default = {
 	"/hero-mountain.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"29b8c-YNUo0WdbFj9Ts1XzFfeYgNzyem0\"",
-		"mtime": "2026-10-28T16:33:54.333Z",
+		"mtime": "2026-10-28T17:12:04.625Z",
 		"size": 170892,
 		"path": "../hero-mountain.jpg"
 	},
 	"/odd-hero-poster.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"157ba-dL9LLLmJoe4FQa0o/JH1Q4uviyI\"",
-		"mtime": "2026-10-28T16:33:54.333Z",
+		"mtime": "2026-10-28T17:12:04.625Z",
 		"size": 87994,
 		"path": "../odd-hero-poster.jpg"
+	},
+	"/odd-icon.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"92c2-zxGHHmn97yg8Dk/JgWm01CrSFW0\"",
+		"mtime": "2026-10-28T17:12:04.626Z",
+		"size": 37570,
+		"path": "../odd-icon.jpg"
+	},
+	"/odd-logo-gemini-160.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"1520-ypRGgKNbnRm7h+jFuYzi1mr7drE\"",
+		"mtime": "2026-10-28T17:12:04.626Z",
+		"size": 5408,
+		"path": "../odd-logo-gemini-160.jpg"
+	},
+	"/odd-logo-gemini-240.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"275e-CspEi5obkInSxD3/YvNRsnSNEXQ\"",
+		"mtime": "2026-10-28T17:12:04.626Z",
+		"size": 10078,
+		"path": "../odd-logo-gemini-240.jpg"
+	},
+	"/odd-logo-gemini.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"9760-ZkS6ANkpU0XdTFbaF37p0KuxI4I\"",
+		"mtime": "2026-10-28T17:12:04.626Z",
+		"size": 38752,
+		"path": "../odd-logo-gemini.jpg"
+	},
+	"/odd-logo-lockup.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"5d83-6jICXlhTECZCoQ22sInRGgTY5wc\"",
+		"mtime": "2026-10-28T17:12:04.627Z",
+		"size": 23939,
+		"path": "../odd-logo-lockup.jpg"
+	},
+	"/odd-logo-navy-gold.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"4538-V8TKujFwDUlza/Cai2jWYxFbRaQ\"",
+		"mtime": "2026-10-28T17:12:04.627Z",
+		"size": 17720,
+		"path": "../odd-logo-navy-gold.jpg"
 	},
 	"/assets/aura-avenir-B0gZY4V8.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"18c54-6HTkl0seqJjSqIlDFHIHQps/rwI\"",
-		"mtime": "2026-10-28T16:33:53.699Z",
+		"mtime": "2026-10-28T17:12:04.129Z",
 		"size": 101460,
 		"path": "../assets/aura-avenir-B0gZY4V8.jpg"
 	},
 	"/assets/aura-coquette-DCrY69Fc.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"14a46-jCj0d21mXCAtZ7upQGnB/Ou5UTs\"",
-		"mtime": "2026-10-28T16:33:53.699Z",
+		"mtime": "2026-10-28T17:12:04.129Z",
 		"size": 84550,
 		"path": "../assets/aura-coquette-DCrY69Fc.jpg"
 	},
 	"/assets/aura-crimson-540-BltHo1Gl.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"1eedc-pmXO9y3cJ75kDfrlXPznwZ2wQK0\"",
-		"mtime": "2026-10-28T16:33:53.699Z",
+		"mtime": "2026-10-28T17:12:04.129Z",
 		"size": 126684,
 		"path": "../assets/aura-crimson-540-BltHo1Gl.jpg"
 	},
 	"/assets/aura-layl-DzvdVdmt.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"19832-1hH1yt43J/CGMZCcJFrrhr60Q/A\"",
-		"mtime": "2026-10-28T16:33:53.699Z",
+		"mtime": "2026-10-28T17:12:04.129Z",
 		"size": 104498,
 		"path": "../assets/aura-layl-DzvdVdmt.jpg"
 	},
 	"/assets/aura-olympus-DwJMeSZF.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"298fa-f5mrw6iSqbp585Qh1f8U56J+KmE\"",
-		"mtime": "2026-10-28T16:33:53.699Z",
+		"mtime": "2026-10-28T17:12:04.129Z",
 		"size": 170234,
 		"path": "../assets/aura-olympus-DwJMeSZF.jpg"
 	},
 	"/assets/aura-opium-noir-DShu1--W.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"1824d-61SWLM/ojmSTHlNK/nGJelDKvj0\"",
-		"mtime": "2026-10-28T16:33:53.699Z",
+		"mtime": "2026-10-28T17:12:04.129Z",
 		"size": 98893,
 		"path": "../assets/aura-opium-noir-DShu1--W.jpg"
 	},
 	"/assets/aura-sahara-BvTXxZSW.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"1a18f-O1JiQUkS/6duR/wmzgO0QMD6eKE\"",
-		"mtime": "2026-10-28T16:33:53.699Z",
+		"mtime": "2026-10-28T17:12:04.129Z",
 		"size": 106895,
 		"path": "../assets/aura-sahara-BvTXxZSW.jpg"
 	},
 	"/assets/aura-velvet-oud-C69DYMrX.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"1c0dd-EttnGyTlA9w8Ix3+8xLm2x6pDf4\"",
-		"mtime": "2026-10-28T16:33:53.699Z",
+		"mtime": "2026-10-28T17:12:04.130Z",
 		"size": 114909,
 		"path": "../assets/aura-velvet-oud-C69DYMrX.jpg"
 	},
 	"/assets/hero-mountain-Cfcx5dQ9.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"29b8c-YNUo0WdbFj9Ts1XzFfeYgNzyem0\"",
-		"mtime": "2026-10-28T16:33:53.699Z",
+		"mtime": "2026-10-28T17:12:04.130Z",
 		"size": 170892,
 		"path": "../assets/hero-mountain-Cfcx5dQ9.jpg"
 	},
-	"/assets/index-7wMApYoy.js": {
+	"/assets/index-D-ZpVN6e.js": {
 		"type": "text/javascript; charset=utf-8",
-		"etag": "\"5440b-jxuPGicYxZkmKhGva8cgO3bjiZQ\"",
-		"mtime": "2026-10-28T16:33:53.699Z",
-		"size": 345099,
-		"path": "../assets/index-7wMApYoy.js"
+		"etag": "\"54447-WtU596rBK9bR0GTh/mL9rI6NvcY\"",
+		"mtime": "2026-10-28T17:12:04.129Z",
+		"size": 345159,
+		"path": "../assets/index-D-ZpVN6e.js"
 	},
-	"/assets/odd-logo-DBUhpTXL.jpg": {
-		"type": "image/jpeg",
-		"etag": "\"33fdc-04oHe4t1vaLJRbJSA5AswRMZTiw\"",
-		"mtime": "2026-10-28T16:33:53.700Z",
-		"size": 212956,
-		"path": "../assets/odd-logo-DBUhpTXL.jpg"
-	},
-	"/assets/routes-D7FTBwjQ.js": {
+	"/assets/routes-DA9iyW7C.js": {
 		"type": "text/javascript; charset=utf-8",
-		"etag": "\"ae46-rOQKVd6PGyThoIj9TMuP8MnSVOE\"",
-		"mtime": "2026-10-28T16:33:53.699Z",
-		"size": 44614,
-		"path": "../assets/routes-D7FTBwjQ.js"
+		"etag": "\"ae49-ZB2WltTrr0G9Q62Z8CnUlv7LKic\"",
+		"mtime": "2026-10-28T17:12:04.129Z",
+		"size": 44617,
+		"path": "../assets/routes-DA9iyW7C.js"
 	},
-	"/assets/styles-BHq6z8JI.css": {
+	"/assets/styles-DAVkOLa1.css": {
 		"type": "text/css; charset=utf-8",
-		"etag": "\"16311-7S1zbN3oM+YJOv0hZZ6kumbh5oM\"",
-		"mtime": "2026-10-28T16:33:53.700Z",
-		"size": 90897,
-		"path": "../assets/styles-BHq6z8JI.css"
+		"etag": "\"15f8d-ybIrKgeTphgvytHbanRjMOEJG7Q\"",
+		"mtime": "2026-10-28T17:12:04.130Z",
+		"size": 89997,
+		"path": "../assets/styles-DAVkOLa1.css"
+	},
+	"/odd-logo-gold.svg": {
+		"type": "image/svg+xml",
+		"etag": "\"12fc6e-Sbd+NXR7WpAgIZnI89nrQfH8ifg\"",
+		"mtime": "2026-10-28T17:12:04.626Z",
+		"size": 1244270,
+		"path": "../odd-logo-gold.svg"
+	},
+	"/odd-logo.svg": {
+		"type": "image/svg+xml",
+		"etag": "\"12fc6e-snqtr+yEcaCRNjfA3yKbhOdFENs\"",
+		"mtime": "2026-10-28T17:12:04.627Z",
+		"size": 1244270,
+		"path": "../odd-logo.svg"
 	},
 	"/odd-hero.mp4": {
 		"type": "video/mp4",
 		"etag": "\"2d43d0-mE1avvg4WtnKP2xBAFuYJqjZnEc\"",
-		"mtime": "2026-10-28T16:33:54.334Z",
+		"mtime": "2026-10-28T17:12:04.626Z",
 		"size": 2966480,
 		"path": "../odd-hero.mp4"
 	}
