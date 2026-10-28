@@ -18,6 +18,20 @@
  * 2. Register it in @theme inline as --color-<name>: var(--<name>)
  */
 
+@theme {
+  /*
+   * Brand palette for ODD (dark navy + champagne gold + teal accent).
+   * These tokens exist so components can reference brand colors via
+   * utilities like `bg-brand-navy` / `text-brand-gold` instead of
+   * hard-coded hex values scattered across the codebase.
+   */
+  --color-brand-navy: #0a1628;
+  --color-brand-navy-deep: #0c2340;
+  --color-brand-navy-darker: #06101e;
+  --color-brand-gold: #e6c98a;
+  --color-brand-teal: #5cbdb9;
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -133,8 +147,29 @@
 }
 
 @layer base {
-  * {
-    border-color: var(--color-border);
+  /*
+   * NOTE: We intentionally do NOT set a global `* { border-color }` here.
+   * A universal border-color (shadcn's default was `--border`, which resolves
+   * to near-white in light mode) painted a visible white hairline around every
+   * element that carries any border utility (borders, dividers, rings).
+   * Every border on this site declares its own explicit color instead
+   * (e.g. border-white/10), so the global rule only caused stray outlines.
+   */
+
+  /*
+   * Kill the browser default focus outline everywhere. It renders as a solid
+   * white/auto-colored box around buttons, links and inputs on click or tab —
+   * perceived as "a white border on everything". Keyboard users still get a
+   * clear brand-teal focus ring via :focus-visible below.
+   */
+  *:focus {
+    outline: none;
+  }
+
+  *:focus-visible {
+    outline: 2px solid #5cbdb9;
+    outline-offset: 2px;
+    border-radius: inherit;
   }
 
   body {
@@ -159,9 +194,48 @@
   .font-serif { font-family: var(--font-serif); }
 }
 
-/* Halve all border widths site-wide (1px -> 0.5px) for a finer, more premium line */
+/*
+ * Premium hairline borders — scoped fix.
+ * The previous rule `*, ::before, ::after { border-width: 0.5px }` forced a
+ * 0.5px border width onto EVERY element in the DOM. Combined with Tailwind's
+ * universal `border-style: solid` reset, any element that also received a
+ * border color (the old global `* { border-color }` rule made this happen to
+ * literally everything) rendered as a thin white/gray box — the "white border
+ * on every element" bug. We now only refine elements that actually declare a
+ * Tailwind border utility.
+ */
 @layer base {
-  *, ::before, ::after {
+  .border,
+  .border-t,
+  .border-b,
+  .border-l,
+  .border-r,
+  .border-x,
+  .border-y,
+  [class*="border-"] {
     border-width: 0.5px;
+  }
+
+  /* Preserve intentional thicker borders */
+  .border-2,
+  .border-4,
+  .border-8 {
+    border-width: revert;
+  }
+}
+
+/*
+ * Accessibility: honor the user's "reduce motion" preference.
+ * The hero uses a scroll-pinned expanding video frame and hover zooms;
+ * vestibular-sensitive users get a static, instant layout instead.
+ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
