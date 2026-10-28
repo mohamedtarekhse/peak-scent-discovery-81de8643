@@ -1,0 +1,11 @@
+# Server-side secrets for local development (wrangler dev) and Cloudflare deployment.
+#
+# 1. Locally: copy this file to `.dev.vars` (gitignored) and fill in the value.
+# 2. On Cloudflare Workers: set it as a secret so it never lives in the repo:
+#      npx wrangler secret put LOVABLE_API_KEY
+#    or add it under `secrets`/Text variables in the Cloudflare dashboard
+#    (Workers & Pages -> your worker -> Settings -> Variables).
+#
+# Used by src/lib/api/recommend.functions.ts (AI Fragrance Picker).
+# Without it, the AI picker throws "Missing LOVABLE_API_KEY" at runtime.
+LOVABLE_API_KEY=your-key-here

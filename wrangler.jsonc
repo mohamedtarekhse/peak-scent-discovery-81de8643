@@ -1,0 +1,18 @@
+// Root wrangler config — used by `wrangler dev` (npm run preview) so it can
+// load .dev.vars secrets locally, and as the base name/vars for deployment.
+// The deploy-ready config with the assets binding is generated at build time
+// into .output/server/wrangler.json (this file's `name` carries over).
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "aura-fragrance-site",
+  "compatibility_date": "2026-10-27",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": ".output/server/index.mjs",
+  "assets": {
+    "binding": "ASSETS",
+    "directory": ".output/public"
+  },
+  // Public (non-secret) variables go here. Secrets like LOVABLE_API_KEY must
+  // live in .dev.vars locally and be set with `wrangler secret put` remotely.
+  "vars": {}
+}

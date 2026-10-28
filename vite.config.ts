@@ -7,6 +7,18 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
+  // Force-enable the Nitro deploy plugin with Cloudflare Workers as the target.
+  // Outside of Lovable's sandbox the plugin is skipped by default, which means
+  // `vite build` produces no .output/server bundle and no wrangler config for
+  // Cloudflare deployment. Passing `nitro: true` restores that behavior.
+  nitro: {
+    preset: "cloudflare-module",
+    cloudflare: {
+      // Generates .output/server/wrangler.json with nodejs_compat + assets binding.
+      deployConfig: true,
+      nodeCompat: true,
+    },
+  },
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
